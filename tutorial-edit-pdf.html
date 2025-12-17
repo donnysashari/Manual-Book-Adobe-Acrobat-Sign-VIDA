@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Lengkap: Mengedit PDF - Buku Manual Adobe</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tutorial-page.css">
+    <link rel="stylesheet" href="styles/tutorial-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-book"></i> Buku Manual Adobe</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+                </a>
+                <a href="#" class="nav-link active">Tutorial Mengedit PDF</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main tutorial-main">
+        <div class="container">
+            <div class="tutorial-hero">
+                <div class="tutorial-breadcrumb">
+                    <a href="index.html">Beranda</a> 
+                    <i class="fas fa-chevron-right"></i> 
+                    <a href="index.html#acrobat">Adobe Acrobat Pro</a> 
+                    <i class="fas fa-chevron-right"></i> 
+                    <span>Mengedit PDF</span>
+                </div>
+                
+                <h1><i class="fas fa-edit"></i> Tutorial Lengkap: Mengedit PDF</h1>
+                <p class="tutorial-subtitle">Panduan komprehensif untuk mengedit teks, gambar, dan konten dalam dokumen PDF menggunakan Adobe Acrobat Pro</p>
+                
+                <div class="tutorial-meta">
+                    <span class="meta-item"><i class="fas fa-clock"></i> 20 menit</span>
+                    <span class="meta-item"><i class="fas fa-signal"></i> Pemula - Menengah</span>
+                    <span class="meta-item"><i class="fas fa-calendar"></i> Diperbarui: Desember 2025</span>
+                </div>
+            </div>
+
+            <div class="tutorial-content-wrapper">
+                <aside class="tutorial-sidebar">
+                    <div class="sidebar-content">
+                        <h3><i class="fas fa-list"></i> Daftar Isi</h3>
+                        <ul class="tutorial-toc">
+                            <li><a href="#overview">Overview Editing PDF</a></li>
+                            <li><a href="#editing-text">Mengedit Teks</a></li>
+                            <li><a href="#editing-images">Mengedit Gambar</a></li>
+                            <li><a href="#adding-content">Menambahkan Konten</a></li>
+                            <li><a href="#organizing-pages">Mengatur Halaman</a></li>
+                            <li><a href="#watermarks">Watermark & Header/Footer</a></li>
+                            <li><a href="#forms-annotations">Form & Annotations</a></li>
+                            <li><a href="#advanced-editing">Editing Lanjutan</a></li>
+                            <li><a href="#troubleshooting">Troubleshooting</a></li>
+                        </ul>
+                        
+                        <div class="sidebar-actions">
+                            <button onclick="window.print()" class="btn-secondary">
+                                <i class="fas fa-print"></i> Cetak Tutorial
+                            </button>
+                            <a href="https://helpx.adobe.com/acrobat/using/editing-pdfs.html" 
+                               target="_blank" class="btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Sumber Resmi Adobe
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="tutorial-article">
+                    <section id="overview" class="tutorial-section">
+                        <h2><i class="fas fa-info-circle"></i> Overview Editing PDF</h2>
+                        
+                        <div class="info-box">
+                            <p>Adobe Acrobat Pro memungkinkan Anda mengedit hampir semua aspek dokumen PDF, dari teks sederhana hingga layout yang kompleks. Tutorial ini akan membahas semua tools dan teknik editing yang tersedia.</p>
+                        </div>
+                        
+                        <h3>Tools Editing Utama</h3>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <i class="fas fa-font"></i>
+                                <h4>Edit Text & Images</h4>
+                                <p>Tool utama untuk mengedit konten PDF</p>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fas fa-plus"></i>
+                                <h4>Add Text or Images</h4>
+                                <p>Menambahkan konten baru ke PDF</p>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fas fa-crop-alt"></i>
+                                <h4>Crop Pages</h4>
+                                <p>Memotong dan mengatur ukuran halaman</p>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fas fa-layer-group"></i>
+                                <h4>Organize Pages</h4>
+                                <p>Mengatur urutan dan struktur halaman</p>
+                            </div>
+                        </div>
+
+                        <h3>Persiapan Sebelum Mengedit</h3>
+                        <div class="preparation-checklist">
+                            <h4>✓ Checklist Persiapan</h4>
+                            <ul class="checklist">
+                                <li><i class="fas fa-check"></i> Pastikan PDF tidak dalam mode "Protected" atau "Read-only"</li>
+                                <li><i class="fas fa-check"></i> Backup file asli sebelum melakukan editing besar</li>
+                                <li><i class="fas fa-check"></i> Check quality PDF - scan berkualitas rendah sulit diedit</li>
+                                <li><i class="fas fa-check"></i> Pastikan font yang digunakan tersedia di sistem Anda</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="editing-text" class="tutorial-section">
+                        <h2><i class="fas fa-font"></i> Mengedit Teks dalam PDF</h2>
+                        
+                        <div class="highlight-box">
+                            <h3>Fitur Paling Sering Digunakan</h3>
+                            <p>Text editing adalah salah satu fungsi editing PDF yang paling umum dibutuhkan.</p>
+                        </div>
+
+                        <h3>1. Mengaktifkan Edit Mode</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Buka Edit Tools</h4>
+                                    <p>Pilih <strong>Tools → Edit PDF</strong> dari menu utama</p>
+                                    <div class="tip">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>Shortcut: Tekan E untuk quick access Edit PDF</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Pilih Text Tool</h4>
+                                    <p>Dari toolbar, pastikan <strong>"Edit Text & Images"</strong> terpilih</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>2. Mengedit Teks Existing</h3>
+                        <div class="editing-methods">
+                            <div class="method-card">
+                                <h4><i class="fas fa-mouse-pointer"></i> Single Click Edit</h4>
+                                <ol>
+                                    <li>Klik pada teks yang ingin diedit</li>
+                                    <li>Text block akan ter-highlight dengan border biru</li>
+                                    <li>Klik di dalam text untuk menempatkan cursor</li>
+                                    <li>Edit teks seperti di word processor</li>
+                                </ol>
+                            </div>
+
+                            <div class="method-card">
+                                <h4><i class="fas fa-expand-arrows-alt"></i> Select Text Block</h4>
+                                <ol>
+                                    <li>Drag untuk select multiple text blocks</li>
+                                    <li>Format multiple text blocks sekaligus</li>
+                                    <li>Gunakan untuk konsistensi formatting</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <h3>3. Format Text Options</h3>
+                        <div class="format-options">
+                            <h4>Font & Typography</h4>
+                            <div class="format-grid">
+                                <div class="format-item">
+                                    <strong>Font Family:</strong> Ganti jenis font (Arial, Times, etc.)
+                                </div>
+                                <div class="format-item">
+                                    <strong>Font Size:</strong> Adjust ukuran teks
+                                </div>
+                                <div class="format-item">
+                                    <strong>Font Color:</strong> Ubah warna teks
+                                </div>
+                                <div class="format-item">
+                                    <strong>Bold/Italic:</strong> Style formatting
+                                </div>
+                                <div class="format-item">
+                                    <strong>Alignment:</strong> Left, center, right, justify
+                                </div>
+                                <div class="format-item">
+                                    <strong>Line Spacing:</strong> Atur jarak antar baris
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>4. Mengatasi Masalah Font</h3>
+                        <div class="font-issues">
+                            <div class="issue-card">
+                                <h4><i class="fas fa-exclamation-triangle"></i> Font Tidak Tersedia</h4>
+                                <p><strong>Masalah:</strong> Font asli tidak ada di sistem</p>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Install font yang diperlukan</li>
+                                    <li>Atau ganti dengan font serupa</li>
+                                    <li>Adobe akan suggest font replacement</li>
+                                </ul>
+                            </div>
+
+                            <div class="issue-card">
+                                <h4><i class="fas fa-ban"></i> Text Tidak Bisa Diedit</h4>
+                                <p><strong>Masalah:</strong> Text sebenarnya adalah gambar (scanned)</p>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Gunakan OCR (Optical Character Recognition)</li>
+                                    <li>Tools → Enhance Scans → Recognize Text</li>
+                                    <li>Atau add text box di atas gambar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="editing-images" class="tutorial-section">
+                        <h2><i class="fas fa-image"></i> Mengedit Gambar dalam PDF</h2>
+                        
+                        <h3>1. Selecting Images</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Aktifkan Edit Mode</h4>
+                                    <p>Pilih <strong>Tools → Edit PDF</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Klik pada Gambar</h4>
+                                    <p>Klik gambar yang ingin diedit - akan muncul border dengan handles</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>2. Image Editing Options</h3>
+                        <div class="image-operations">
+                            <div class="operation-grid">
+                                <div class="operation-card">
+                                    <i class="fas fa-expand"></i>
+                                    <h4>Resize</h4>
+                                    <p>Drag corner handles untuk resize proporsional</p>
+                                    <ul>
+                                        <li>Hold Shift untuk maintain aspect ratio</li>
+                                        <li>Drag side handles untuk stretch</li>
+                                    </ul>
+                                </div>
+
+                                <div class="operation-card">
+                                    <i class="fas fa-arrows-alt"></i>
+                                    <h4>Move</h4>
+                                    <p>Drag gambar untuk memindahkan posisi</p>
+                                    <ul>
+                                        <li>Gunakan arrow keys untuk precision</li>
+                                        <li>Hold Shift untuk move in straight line</li>
+                                    </ul>
+                                </div>
+
+                                <div class="operation-card">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <h4>Rotate</h4>
+                                    <p>Right-click → Rotate untuk memutar gambar</p>
+                                    <ul>
+                                        <li>Rotate Clockwise / Counterclockwise</li>
+                                        <li>Atau use rotate handle jika tersedia</li>
+                                    </ul>
+                                </div>
+
+                                <div class="operation-card">
+                                    <i class="fas fa-crop"></i>
+                                    <h4>Crop</h4>
+                                    <p>Right-click → Crop Image untuk memotong</p>
+                                    <ul>
+                                        <li>Drag crop handles untuk area yang diinginkan</li>
+                                        <li>Double-click untuk apply crop</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>3. Replace & Edit Images</h3>
+                        <div class="replace-methods">
+                            <div class="method-card">
+                                <h4><i class="fas fa-exchange-alt"></i> Replace Image</h4>
+                                <ol>
+                                    <li>Right-click pada gambar</li>
+                                    <li>Pilih <strong>"Replace Image"</strong></li>
+                                    <li>Browse dan pilih gambar baru</li>
+                                    <li>Gambar baru akan menggantikan di posisi yang sama</li>
+                                </ol>
+                            </div>
+
+                            <div class="method-card">
+                                <h4><i class="fas fa-external-link-alt"></i> Edit in External App</h4>
+                                <ol>
+                                    <li>Right-click pada gambar</li>
+                                    <li>Pilih <strong>"Edit Using..."</strong></li>
+                                    <li>Pilih aplikasi (Photoshop, GIMP, etc.)</li>
+                                    <li>Edit gambar, save untuk update PDF</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <h3>4. Image Quality & Compression</h3>
+                        <div class="quality-settings">
+                            <h4>Optimize Image Quality</h4>
+                            <ul>
+                                <li><strong>High Quality:</strong> Untuk dokumen print - minimal compression</li>
+                                <li><strong>Medium Quality:</strong> Balance antara size dan quality</li>
+                                <li><strong>Web Quality:</strong> Untuk dokumen digital - smaller file size</li>
+                            </ul>
+                            
+                            <div class="tip-box">
+                                <h4><i class="fas fa-lightbulb"></i> Tips Image Quality</h4>
+                                <ul>
+                                    <li>Use original high-resolution images saat replace</li>
+                                    <li>PNG untuk images dengan transparency</li>
+                                    <li>JPG untuk photos dengan banyak warna</li>
+                                    <li>Avoid scaling up small images - akan blur</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="adding-content" class="tutorial-section">
+                        <h2><i class="fas fa-plus-circle"></i> Menambahkan Konten Baru</h2>
+                        
+                        <h3>1. Add Text</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Pilih Add Text Tool</h4>
+                                    <p>Tools → Edit PDF → <strong>Add Text</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Klik di Area yang Diinginkan</h4>
+                                    <p>Klik di halaman PDF dimana Anda ingin menambahkan teks</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Type Text</h4>
+                                    <p>Ketik teks yang diinginkan, format sesuai kebutuhan</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>2. Add Images</h3>
+                        <div class="add-image-process">
+                            <div class="process-card">
+                                <h4><i class="fas fa-upload"></i> From Computer</h4>
+                                <ol>
+                                    <li>Tools → Edit PDF → <strong>Add Image</strong></li>
+                                    <li>Browse dan pilih image file</li>
+                                    <li>Klik di PDF untuk place image</li>
+                                    <li>Resize dan position sesuai kebutuhan</li>
+                                </ol>
+                            </div>
+
+                            <div class="process-card">
+                                <h4><i class="fas fa-camera"></i> From Scanner</h4>
+                                <ol>
+                                    <li>Tools → Create PDF → <strong>Scanner</strong></li>
+                                    <li>Scan document atau image</li>
+                                    <li>Import hasil scan ke PDF</li>
+                                    <li>Combine dengan dokumen existing</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <h3>3. Add Shapes & Lines</h3>
+                        <div class="shapes-tools">
+                            <h4>Comment Tools untuk Shapes</h4>
+                            <p>Gunakan Comment tools untuk menambahkan shapes:</p>
+                            <div class="shapes-grid">
+                                <div class="shape-tool">
+                                    <i class="fas fa-square"></i>
+                                    <span>Rectangle</span>
+                                </div>
+                                <div class="shape-tool">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Oval</span>
+                                </div>
+                                <div class="shape-tool">
+                                    <i class="fas fa-minus"></i>
+                                    <span>Line</span>
+                                </div>
+                                <div class="shape-tool">
+                                    <i class="fas fa-draw-polygon"></i>
+                                    <span>Polygon</span>
+                                </div>
+                                <div class="shape-tool">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                    <span>Arrow</span>
+                                </div>
+                                <div class="shape-tool">
+                                    <i class="fas fa-cloud"></i>
+                                    <span>Cloud</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="organizing-pages" class="tutorial-section">
+                        <h2><i class="fas fa-copy"></i> Mengatur Halaman PDF</h2>
+                        
+                        <h3>1. Page Thumbnails Panel</h3>
+                        <div class="panel-info">
+                            <p>Akses page management melalui <strong>Page Thumbnails panel</strong> di sebelah kiri</p>
+                            <ul>
+                                <li>View → Show/Hide → Navigation Panes → Page Thumbnails</li>
+                                <li>Atau tekan F4 untuk toggle panel</li>
+                            </ul>
+                        </div>
+
+                        <h3>2. Page Operations</h3>
+                        <div class="page-operations">
+                            <div class="operation-grid">
+                                <div class="operation-card">
+                                    <i class="fas fa-plus"></i>
+                                    <h4>Insert Pages</h4>
+                                    <ul>
+                                        <li>Right-click thumbnail → Insert Pages</li>
+                                        <li>Choose: Blank page, From file, From scanner</li>
+                                        <li>Select position: Before/After current page</li>
+                                    </ul>
+                                </div>
+
+                                <div class="operation-card">
+                                    <i class="fas fa-trash"></i>
+                                    <h4>Delete Pages</h4>
+                                    <ul>
+                                        <li>Select page(s) di thumbnail panel</li>
+                                        <li>Right-click → Delete Pages</li>
+                                        <li>Atau tekan Delete key</li>
+                                    </ul>
+                                </div>
+
+                                <div class="operation-card">
+                                    <i class="fas fa-arrows-alt"></i>
+                                    <h4>Reorder Pages</h4>
+                                    <ul>
+                                        <li>Drag thumbnail ke posisi baru</li>
+                                        <li>Drop indicator menunjukkan posisi</li>
+                                        <li>Atau cut & paste di posisi yang diinginkan</li>
+                                    </ul>
+                                </div>
+
+                                <div class="operation-card">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <h4>Rotate Pages</h4>
+                                    <ul>
+                                        <li>Right-click thumbnail → Rotate Pages</li>
+                                        <li>Pilih: 90° Clockwise/Counterclockwise</li>
+                                        <li>Apply to: Current page, All pages, Page range</li>
+                                    </ul>
+                                </div>
+
+                                <div class="operation-card">
+                                    <i class="fas fa-crop"></i>
+                                    <h4>Crop Pages</h4>
+                                    <ul>
+                                        <li>Tools → Edit PDF → Crop Pages</li>
+                                        <li>Drag crop box untuk set area</li>
+                                        <li>Apply to selected pages atau all</li>
+                                    </ul>
+                                </div>
+
+                                <div class="operation-card">
+                                    <i class="fas fa-copy"></i>
+                                    <h4>Extract Pages</h4>
+                                    <ul>
+                                        <li>Right-click thumbnail → Extract Pages</li>
+                                        <li>Create new PDF dari selected pages</li>
+                                        <li>Option: Delete from original</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>3. Page Size & Orientation</h3>
+                        <div class="page-size-options">
+                            <h4>Preflight untuk Page Setup</h4>
+                            <p>Tools → Print Production → <strong>Preflight</strong></p>
+                            <ul>
+                                <li><strong>Scale Pages:</strong> Resize all pages proportionally</li>
+                                <li><strong>Crop Pages:</strong> Set uniform margins</li>
+                                <li><strong>Rotate Pages:</strong> Fix orientation issues</li>
+                                <li><strong>Add/Remove Margins:</strong> Adjust white space</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="watermarks" class="tutorial-section">
+                        <h2><i class="fas fa-tint"></i> Watermark & Header/Footer</h2>
+                        
+                        <h3>1. Adding Watermarks</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Akses Watermark Tool</h4>
+                                    <p>Tools → Edit PDF → <strong>Watermark → Add</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Choose Watermark Type</h4>
+                                    <ul>
+                                        <li><strong>Text:</strong> Ketik text watermark (e.g., "CONFIDENTIAL")</li>
+                                        <li><strong>File:</strong> Upload image/logo sebagai watermark</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Configure Settings</h4>
+                                    <ul>
+                                        <li><strong>Appearance:</strong> Font, size, color, opacity</li>
+                                        <li><strong>Position:</strong> Center, top, bottom, custom</li>
+                                        <li><strong>Rotation:</strong> Angle watermark</li>
+                                        <li><strong>Scale:</strong> Relative to page atau absolute size</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>2. Headers & Footers</h3>
+                        <div class="header-footer-process">
+                            <div class="process-card">
+                                <h4><i class="fas fa-plus"></i> Add Header & Footer</h4>
+                                <ol>
+                                    <li>Tools → Edit PDF → <strong>Header & Footer → Add</strong></li>
+                                    <li>Choose preset atau custom text</li>
+                                    <li>Use macros: Page #, Date, Filename, etc.</li>
+                                    <li>Set font dan formatting</li>
+                                    <li>Apply to all pages atau page range</li>
+                                </ol>
+                            </div>
+
+                            <div class="process-card">
+                                <h4><i class="fas fa-magic"></i> Available Macros</h4>
+                                <ul>
+                                    <li><strong>&lt;&lt;1&gt;&gt;</strong> - Page number</li>
+                                    <li><strong>&lt;&lt;#&gt;&gt;</strong> - Total pages</li>
+                                    <li><strong>&lt;&lt;D&gt;&gt;</strong> - Current date</li>
+                                    <li><strong>&lt;&lt;T&gt;&gt;</strong> - Current time</li>
+                                    <li><strong>&lt;&lt;F&gt;&gt;</strong> - Filename</li>
+                                    <li><strong>&lt;&lt;P&gt;&gt;</strong> - Full file path</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>3. Background Images</h3>
+                        <div class="background-options">
+                            <h4>Add Background</h4>
+                            <p>Tools → Edit PDF → <strong>Background → Add</strong></p>
+                            <ul>
+                                <li>Upload background image</li>
+                                <li>Set opacity untuk subtle effect</li>
+                                <li>Scale to fit page dimensions</li>
+                                <li>Apply to selected pages</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="forms-annotations" class="tutorial-section">
+                        <h2><i class="fas fa-sticky-note"></i> Form Fields & Annotations</h2>
+                        
+                        <h3>1. Adding Form Fields</h3>
+                        <div class="form-fields-info">
+                            <p>Tools → <strong>Prepare Form</strong> untuk create interactive form</p>
+                            
+                            <div class="form-types-grid">
+                                <div class="field-type">
+                                    <i class="fas fa-font"></i>
+                                    <h4>Text Field</h4>
+                                    <p>Single line atau multiline text input</p>
+                                </div>
+                                <div class="field-type">
+                                    <i class="fas fa-check-square"></i>
+                                    <h4>Check Box</h4>
+                                    <p>Yes/No atau multiple choice</p>
+                                </div>
+                                <div class="field-type">
+                                    <i class="fas fa-dot-circle"></i>
+                                    <h4>Radio Button</h4>
+                                    <p>Mutually exclusive options</p>
+                                </div>
+                                <div class="field-type">
+                                    <i class="fas fa-caret-down"></i>
+                                    <h4>Dropdown</h4>
+                                    <p>List of selectable options</p>
+                                </div>
+                                <div class="field-type">
+                                    <i class="fas fa-signature"></i>
+                                    <h4>Signature</h4>
+                                    <p>Digital signature field</p>
+                                </div>
+                                <div class="field-type">
+                                    <i class="fas fa-mouse-pointer"></i>
+                                    <h4>Button</h4>
+                                    <p>Submit, reset, atau custom action</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>2. Annotations & Comments</h3>
+                        <div class="annotation-tools">
+                            <h4>Comment Tools Panel</h4>
+                            <p>Tools → <strong>Comment</strong> untuk access annotation tools</p>
+                            
+                            <div class="annotation-types">
+                                <div class="annotation-item">
+                                    <i class="fas fa-sticky-note"></i>
+                                    <div>
+                                        <h5>Sticky Notes</h5>
+                                        <p>Add popup comments anywhere on page</p>
+                                    </div>
+                                </div>
+                                <div class="annotation-item">
+                                    <i class="fas fa-highlighter"></i>
+                                    <div>
+                                        <h5>Highlight Text</h5>
+                                        <p>Highlight, underline, atau strikethrough text</p>
+                                    </div>
+                                </div>
+                                <div class="annotation-item">
+                                    <i class="fas fa-draw-polygon"></i>
+                                    <div>
+                                        <h5>Drawing Tools</h5>
+                                        <p>Freehand drawing, shapes, arrows</p>
+                                    </div>
+                                </div>
+                                <div class="annotation-item">
+                                    <i class="fas fa-stamp"></i>
+                                    <div>
+                                        <h5>Stamps</h5>
+                                        <p>Approved, Draft, Confidential, custom stamps</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="advanced-editing" class="tutorial-section">
+                        <h2><i class="fas fa-cogs"></i> Advanced Editing Techniques</h2>
+                        
+                        <h3>1. Redaction (Censoring Content)</h3>
+                        <div class="redaction-process">
+                            <p><span class="badge pro">Acrobat Pro Only</span></p>
+                            <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Mark for Redaction</h4>
+                                        <p>Tools → <strong>Redact → Mark for Redaction</strong></p>
+                                        <p>Select text atau areas yang ingin disensor</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Apply Redactions</h4>
+                                        <p>Review marked areas, then <strong>Apply Redactions</strong></p>
+                                        <div class="warning-box">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            <span>Permanent action! Content akan hilang selamanya</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>2. OCR (Optical Character Recognition)</h3>
+                        <div class="ocr-info">
+                            <h4>Make Scanned PDFs Searchable</h4>
+                            <ol>
+                                <li>Tools → <strong>Enhance Scans → Recognize Text</strong></li>
+                                <li>Choose settings: Language, output type</li>
+                                <li>OCR akan convert image text menjadi editable text</li>
+                                <li>Review dan correct OCR errors manually</li>
+                            </ol>
+                            
+                            <div class="tip-box">
+                                <h4><i class="fas fa-lightbulb"></i> OCR Best Practices</h4>
+                                <ul>
+                                    <li>Use high-resolution scans (300+ DPI) untuk better accuracy</li>
+                                    <li>Ensure good contrast antara text dan background</li>
+                                    <li>Straighten skewed documents sebelum OCR</li>
+                                    <li>Always proofread OCR hasil untuk errors</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>3. Batch Processing</h3>
+                        <div class="batch-operations">
+                            <h4>Action Wizard untuk Automation</h4>
+                            <p><span class="badge pro">Acrobat Pro Only</span></p>
+                            <p>Tools → <strong>Action Wizard</strong></p>
+                            
+                            <div class="batch-examples">
+                                <div class="batch-card">
+                                    <h5>Optimize Multiple Files</h5>
+                                    <p>Reduce file size untuk multiple PDFs sekaligus</p>
+                                </div>
+                                <div class="batch-card">
+                                    <h5>Add Watermarks</h5>
+                                    <p>Apply same watermark ke folder of PDFs</p>
+                                </div>
+                                <div class="batch-card">
+                                    <h5>Convert to PDF/A</h5>
+                                    <p>Archive format conversion untuk compliance</p>
+                                </div>
+                                <div class="batch-card">
+                                    <h5>Security Settings</h5>
+                                    <p>Apply password protection ke multiple files</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>4. Accessibility Features</h3>
+                        <div class="accessibility-tools">
+                            <h4>Make PDFs Accessible</h4>
+                            <ul>
+                                <li><strong>Tags:</strong> Add structural tags untuk screen readers</li>
+                                <li><strong>Alt Text:</strong> Descriptions untuk images</li>
+                                <li><strong>Reading Order:</strong> Logical flow untuk assistive technology</li>
+                                <li><strong>Color Contrast:</strong> Ensure adequate contrast</li>
+                                <li><strong>Form Labels:</strong> Proper labels untuk form fields</li>
+                            </ul>
+                            
+                            <p>Tools → <strong>Accessibility</strong> untuk full accessibility checker</p>
+                        </div>
+                    </section>
+
+                    <section id="troubleshooting" class="tutorial-section">
+                        <h2><i class="fas fa-tools"></i> Troubleshooting Common Issues</h2>
+                        
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Text menjadi jumbled/corrupted setelah edit</h3>
+                                <p><strong>Penyebab:</strong> Font encoding issues atau missing font</p>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Install font asli yang digunakan dalam dokumen</li>
+                                    <li>Ganti dengan font serupa yang tersedia</li>
+                                    <li>Use "Add Text" tool instead of edit existing</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Cannot edit text - "No editable text found"</h3>
+                                <p><strong>Penyebab:</strong> PDF dibuat dari scanned image</p>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Jalankan OCR: Tools → Enhance Scans → Recognize Text</li>
+                                    <li>Atau use "Add Text" tool untuk overlay text</li>
+                                    <li>Convert ke editable format (Word) dulu, edit, lalu export ke PDF</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Images look blurry after editing</h3>
+                                <p><strong>Penyebab:</strong> Image resolution terlalu rendah atau di-scale up</p>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Replace dengan high-resolution version</li>
+                                    <li>Avoid scaling up small images</li>
+                                    <li>Use vector graphics (SVG, AI) untuk scalable elements</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> File size menjadi sangat besar setelah edit</h3>
+                                <p><strong>Penyebab:</strong> Added high-res images atau inefficient compression</p>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Tools → Optimize PDF untuk reduce file size</li>
+                                    <li>Compress images sebelum add ke PDF</li>
+                                    <li>Remove unnecessary elements (hidden content, etc.)</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Layout berubah setelah edit text</h3>
+                                <p><strong>Penyebab:</strong> Text flow dan spacing issues</p>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Adjust line spacing dan paragraph settings</li>
+                                    <li>Use "Add Text" tool dengan text box size yang tepat</li>
+                                    <li>Edit di source application (Word, InDesign) untuk complex layouts</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Cannot save changes - "Document is protected"</h3>
+                                <p><strong>Penyebab:</strong> PDF memiliki security restrictions</p>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Check Document Properties → Security tab</li>
+                                    <li>Remove security jika Anda punya permission</li>
+                                    <li>Contact document owner untuk unlock</li>
+                                    <li>Print to new PDF untuk remove some restrictions</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="troubleshooting-tips">
+                            <h3><i class="fas fa-lightbulb"></i> General Troubleshooting Tips</h3>
+                            <div class="tips-grid">
+                                <div class="tip-card">
+                                    <h4>Before Editing</h4>
+                                    <ul>
+                                        <li>Always backup original file</li>
+                                        <li>Check document properties</li>
+                                        <li>Verify font availability</li>
+                                        <li>Test edit pada single page dulu</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h4>Performance</h4>
+                                    <ul>
+                                        <li>Close other applications untuk free memory</li>
+                                        <li>Work dengan smaller page ranges</li>
+                                        <li>Save frequently during long edits</li>
+                                        <li>Restart Acrobat if sluggish</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h4>Quality Control</h4>
+                                    <ul>
+                                        <li>Zoom in untuk check detail work</li>
+                                        <li>Print test page untuk verify output</li>
+                                        <li>Check di different devices/screens</li>
+                                        <li>Validate accessibility if required</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h4>When to Avoid PDF Editing</h4>
+                                    <ul>
+                                        <li>Complex layouts dengan multiple columns</li>
+                                        <li>Heavy formatting requirements</li>
+                                        <li>Large-scale text changes</li>
+                                        <li>Consider edit source file instead</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Buku Manual Adobe. Tutorial berdasarkan dokumentasi resmi Adobe Acrobat Pro (Diperbarui Desember 2025)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Highlight current section in sidebar
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.tutorial-section');
+            const tocLinks = document.querySelectorAll('.tutorial-toc a');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100) {
+                    currentSection = section.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

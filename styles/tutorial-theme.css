@@ -1,0 +1,121 @@
+/* Tutorial Theme Override - Red Color Scheme */
+
+/* Override feature items for red theme */
+.tutorial-page-content .feature-item {
+    border-left-color: #dc143c !important;
+}
+
+.tutorial-page-content .feature-item h5 {
+    color: #dc143c !important;
+    font-weight: 600 !important;
+}
+
+.tutorial-page-content .feature-item:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(220, 20, 60, 0.2) !important;
+}
+
+/* Override navigation cards for red theme */
+.tutorial-page-content .nav-card:hover {
+    border-color: #dc143c !important;
+    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.15) !important;
+}
+
+.tutorial-page-content .nav-card h3 {
+    color: #dc143c !important;
+    font-weight: 600 !important;
+}
+
+/* Override method items */
+.tutorial-page-content .method-item {
+    border-left-color: #dc143c !important;
+}
+
+.tutorial-page-content .method-item h5 {
+    color: #dc143c !important;
+}
+
+/* Override tip items */
+.tutorial-page-content .tip-item {
+    border-left-color: #dc143c !important;
+}
+
+.tutorial-page-content .tip-item h4 {
+    color: #dc143c !important;
+}
+
+/* Tutorial navigation section styling */
+.tutorial-navigation {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+    border: 1px solid rgba(220, 20, 60, 0.1);
+}
+
+.tutorial-navigation h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+}
+
+/* Enhanced content styling */
+.tutorial-subsection {
+    margin-bottom: 2.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tutorial-subsection h3 {
+    background: linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, rgba(220, 20, 60, 0.05) 100%);
+    padding: 1rem;
+    margin: 0 0 1rem 0 !important;
+    border-left: 4px solid #dc143c !important;
+    border-radius: 8px 8px 0 0;
+}
+
+/* List styling improvements */
+.tutorial-page-content ol,
+.tutorial-page-content ul {
+    padding-left: 1.5rem;
+}
+
+.tutorial-page-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.tutorial-page-content li strong {
+    color: #dc143c;
+    font-weight: 600;
+}
+
+/* Enhanced responsive design */
+@media (max-width: 768px) {
+    .tutorial-page-content {
+        padding: 1rem;
+    }
+    
+    .tutorial-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .breadcrumb {
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Print-friendly styles */
+@media print {
+    .header,
+    .footer,
+    .breadcrumb,
+    .tutorial-navigation {
+        display: none !important;
+    }
+    
+    .tutorial-page-content {
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+}

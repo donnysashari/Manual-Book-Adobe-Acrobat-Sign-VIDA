@@ -1,0 +1,22 @@
+{
+  "name": "buku-manual-adobe",
+  "version": "1.0.0",
+  "description": "Website buku manual untuk Adobe Acrobat Pro, Adobe Sign, dan VIDA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "adobe",
+    "acrobat",
+    "sign",
+    "vida",
+    "manual",
+    "pdf",
+    "viewer",
+    "indonesia"
+  ],
+  "author": "Buku Manual Adobe",
+  "license": "MIT"
+}

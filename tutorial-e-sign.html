@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial E-Sign Lengkap - Adobe Acrobat Manual</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tutorial-page.css">
+    <link rel="stylesheet" href="styles/tutorial-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-book"></i> Buku Manual Adobe</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="#" class="nav-link" data-section="acrobat">Adobe Acrobat Pro</a>
+                <a href="#" class="nav-link" data-section="sign">Adobe Sign</a>
+                <a href="#" class="nav-link" data-section="vida">VIDA</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> Beranda</a> > 
+                <span><i class="fas fa-pen-nib"></i> Tutorial E-Sign Lengkap</span>
+            </nav>
+
+            <div class="hero">
+                <h2><i class="fas fa-pen-nib"></i> Tutorial E-Sign & Tanda Tangan Digital Adobe Acrobat</h2>
+                <p>Panduan komprehensif untuk e-signature dan digital signature dengan standar keamanan tinggi</p>
+            </div>
+
+            <div class="tutorial-page-content">
+                <!-- Bagian Overview E-Sign vs Digital Signature -->
+                <section class="tutorial-section">
+                    <h2><i class="fas fa-info-circle"></i> Memahami E-Sign & Digital Signature</h2>
+                    
+                    <div class="tutorial-subsection">
+                        <h3>Perbedaan E-Signature dan Digital Signature</h3>
+                        <div class="content-box">
+                            <div class="feature-grid">
+                                <div class="feature-item">
+                                    <h5><i class="fas fa-signature"></i> E-Signature (Tanda Tangan Elektronik)</h5>
+                                    <ul>
+                                        <li>Mudah digunakan untuk persetujuan dokumen</li>
+                                        <li>Dapat berupa gambar, teks, atau tanda tangan yang digambar</li>
+                                        <li>Tersimpan di cloud Adobe untuk sinkronisasi perangkat</li>
+                                        <li>Ideal untuk workflow persetujuan umum</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-item">
+                                    <h5><i class="fas fa-certificate"></i> Digital Signature (Tanda Tangan Digital)</h5>
+                                    <ul>
+                                        <li>Menggunakan sertifikat dan enkripsi untuk keamanan tinggi</li>
+                                        <li>Memverifikasi identitas penandatangan</li>
+                                        <li>Melindungi dokumen dari perubahan tidak sah</li>
+                                        <li>Memenuhi standar compliance industri</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-subsection">
+                        <h3>Format File yang Didukung untuk E-Sign</h3>
+                        <div class="content-box">
+                            <h4>Selain PDF, Anda dapat mengirim file berikut untuk ditandatangani:</h4>
+                            <div class="export-methods">
+                                <div class="method-item">
+                                    <h5><i class="fas fa-file-word"></i> Microsoft Office</h5>
+                                    <p>DOC, DOCX, RTF, XLSX, PPT, PPTX</p>
+                                </div>
+                                <div class="method-item">
+                                    <h5><i class="fas fa-file-alt"></i> Text Files</h5>
+                                    <p>TXT, CSV</p>
+                                </div>
+                                <div class="method-item">
+                                    <h5><i class="fas fa-code"></i> Web Files</h5>
+                                    <p>HTML, HTM</p>
+                                </div>
+                                <div class="method-item">
+                                    <h5><i class="fas fa-image"></i> Image Files</h5>
+                                    <p>TIFF, TIF, BMP, GIF, JPG, JPEG, PNG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bagian Setup Digital ID -->
+                <section class="tutorial-section">
+                    <h2><i class="fas fa-id-card"></i> Persiapan Digital Signature</h2>
+                    
+                    <div class="tutorial-subsection">
+                        <h3>1. Mendapatkan Digital ID</h3>
+                        <div class="content-box">
+                            <h4>Cara memperoleh Digital ID:</h4>
+                            <ol>
+                                <li><strong>Minta dari organisasi Anda</strong> (untuk penggunaan corporate)</li>
+                                <li><strong>Beli dari Adobe security partner</strong> (sertifikat terpercaya)</li>
+                                <li><strong>Buat self-signed digital ID</strong> di Acrobat (untuk kebutuhan internal)</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-subsection">
+                        <h3>2. Konfigurasi Signature di Acrobat</h3>
+                        <div class="content-box">
+                            <h4>Langkah setup:</h4>
+                            <ol>
+                                <li>Buka <strong>Menu</strong> (Windows) atau <strong>Acrobat</strong> (macOS) > <strong>Preferences</strong> > <strong>Signatures</strong></li>
+                                <li>Pilih <strong>More</strong> di bawah <strong>Creation & Appearance</strong></li>
+                                <li>Pilih metode signing default yang diinginkan</li>
+                                <li>Di bagian <strong>Appearances</strong>, pilih <strong>New</strong> untuk membuat tampilan signature</li>
+                                <li>Klik <strong>OK</strong> untuk menyimpan pengaturan</li>
+                            </ol>
+                            
+                            <div class="warning-box">
+                                <strong><i class="fas fa-shield-alt"></i> Keamanan Penting:</strong> Aktifkan "Enable Protected Mode at startup" untuk preview dokumen yang aman sebelum menandatangani.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bagian Mengirim Dokumen untuk E-Sign -->
+                <section class="tutorial-section">
+                    <h2><i class="fas fa-paper-plane"></i> Mengirim Dokumen untuk E-Signature</h2>
+                    
+                    <div class="tutorial-subsection">
+                        <h3>1. Request E-Signatures Individual</h3>
+                        <div class="content-box">
+                            <h4>Langkah-langkah mengirim dokumen:</h4>
+                            <ol>
+                                <li>Pilih <strong>E-Sign</strong> > <strong>Request e-signatures</strong></li>
+                                <li>Masukkan email dan nama penerima dalam dialog box</li>
+                                <li>Untuk menambah penerima lain, klik ikon <strong>plus</strong> dan pilih:
+                                    <ul>
+                                        <li><strong>Add recipient</strong> - Tambah penandatangan</li>
+                                        <li><strong>Add yourself</strong> - Tambahkan diri Anda</li>
+                                        <li><strong>Add CC</strong> - Tambah penerima copy</li>
+                                    </ul>
+                                </li>
+                                <li>Centang <strong>"Recipients must sign in order"</strong> jika memerlukan urutan tandatangan</li>
+                                <li>Pilih <strong>Prepare document</strong></li>
+                            </ol>
+                            
+                            <h4>Menempatkan field signature:</h4>
+                            <ol>
+                                <li>Pilih tipe field dari panel kiri</li>
+                                <li>Klik pada dokumen di posisi yang diinginkan</li>
+                                <li>Drag dan drop field seperti signature dan name untuk setiap penerima</li>
+                                <li>Gunakan menu konteks untuk:
+                                    <ul>
+                                        <li>Menandai field sebagai required</li>
+                                        <li>Mengubah penerima yang ditugaskan</li>
+                                        <li>Customize field</li>
+                                        <li>Delete, copy, atau clone field</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            
+                            <h4>Review dan kirim:</h4>
+                            <ol>
+                                <li>Di halaman <strong>Review and send</strong>, periksa detail agreement</li>
+                                <li>Atur frekuensi reminder jika diperlukan</li>
+                                <li>Pilih <strong>Send</strong> untuk mengirim dokumen</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-subsection">
+                        <h3>2. Request E-Signatures in Bulk</h3>
+                        <div class="content-box">
+                            <div class="info-box">
+                                <strong><i class="fas fa-info-circle"></i> Catatan:</strong> Fitur Send in bulk hanya tersedia untuk pengguna dengan langganan Acrobat Pro atau Acrobat Pro for teams.
+                            </div>
+                            
+                            <h4>Langkah bulk signing:</h4>
+                            <ol>
+                                <li>Pilih <strong>E-Sign</strong> > <strong>Send in bulk</strong></li>
+                                <li>Pilih <strong>Choose files</strong>, pilih dokumen untuk bulk signing, lalu <strong>Confirm</strong></li>
+                                <li>Sesuaikan judul di <strong>Agreement name</strong> dan customize pesan</li>
+                                <li>Klik ikon pengaturan untuk mengatur:
+                                    <ul>
+                                        <li>Completion deadline</li>
+                                        <li>Reminder frequency</li>
+                                        <li>Password requirements</li>
+                                        <li>Bahasa penerima</li>
+                                    </ul>
+                                </li>
+                                <li>Pilih <strong>Continue</strong></li>
+                                <li>Pilih <strong>Add recipients</strong> dan masukkan alamat email (pisahkan dengan koma)</li>
+                                <li>Bisa menambahkan hingga 50 penerima</li>
+                                <li>Pilih metode autentikasi dari dropdown Email</li>
+                                <li>Pilih <strong>Preview & add fields</strong></li>
+                                <li>Drag signature dan form fields ke lokasi yang diinginkan</li>
+                                <li>Centang <strong>Save as template</strong> jika ingin menyimpan sebagai template</li>
+                                <li>Pilih <strong>Send</strong></li>
+                            </ol>
+                            
+                            <div class="feature-highlight">
+                                <h5><i class="fas fa-check-circle"></i> Keunggulan Bulk Signing:</h5>
+                                <ul>
+                                    <li>Setiap agreement independen dengan audit report sendiri</li>
+                                    <li>Penandatangan tidak mengetahui satu sama lain</li>
+                                    <li>Efisien untuk dokumen yang sama ke multiple recipient</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bagian Menandatangani Dokumen -->
+                <section class="tutorial-section">
+                    <h2><i class="fas fa-pen"></i> Menandatangani Dokumen</h2>
+                    
+                    <div class="tutorial-subsection">
+                        <h3>1. E-Sign Agreement (Tanda Tangan Elektronik)</h3>
+                        <div class="content-box">
+                            <h4>Saat menerima dokumen untuk ditandatangani:</h4>
+                            <ol>
+                                <li>Pilih <strong>Home</strong> dan pilih <strong>Waiting for you</strong> di bawah Agreements</li>
+                                <li>Double-click agreement yang ingin ditandatangani</li>
+                                <li>Pilih signature field dalam agreement</li>
+                                <li>Jika pertama kali menandatangani, buat signature dengan memilih:</li>
+                            </ol>
+                            
+                            <div class="export-methods">
+                                <div class="method-item">
+                                    <h5><i class="fas fa-keyboard"></i> Type</h5>
+                                    <p>Ketik nama Anda dan pilih dari berbagai gaya signature</p>
+                                </div>
+                                <div class="method-item">
+                                    <h5><i class="fas fa-pencil-alt"></i> Draw</h5>
+                                    <p>Gambar signature Anda langsung di field</p>
+                                </div>
+                                <div class="method-item">
+                                    <h5><i class="fas fa-image"></i> Image</h5>
+                                    <p>Browse dan pilih gambar signature yang sudah ada</p>
+                                </div>
+                                <div class="method-item">
+                                    <h5><i class="fas fa-mobile-alt"></i> Mobile</h5>
+                                    <p>Buat signature di mobile device - link akan dikirim ke ponsel Anda</p>
+                                </div>
+                            </div>
+                            
+                            <ol start="5">
+                                <li>Pilih <strong>Apply</strong> setelah membuat signature</li>
+                                <li>Lengkapi semua field dan signature yang required</li>
+                                <li>Pilih <strong>Click to Sign</strong> untuk finalisasi</li>
+                            </ol>
+                            
+                            <div class="tip-box">
+                                <strong><i class="fas fa-sync-alt"></i> Sinkronisasi Signature:</strong> Signature Anda akan tersimpan di Adobe cloud dan tersedia di semua device (desktop, web, mobile).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-subsection">
+                        <h3>2. Digital Signature (Tanda Tangan Digital)</h3>
+                        <div class="content-box">
+                            <h4>Untuk tanda tangan dengan sertifikat digital:</h4>
+                            <ol>
+                                <li>Pastikan Anda memiliki Digital ID yang valid</li>
+                                <li>Buka dokumen yang akan ditandatangani</li>
+                                <li>Pilih alat <strong>Sign</strong> atau klik pada signature field</li>
+                                <li>Pilih Digital ID yang akan digunakan</li>
+                                <li>Masukkan password untuk Digital ID</li>
+                                <li>Pilih tipe signature:
+                                    <ul>
+                                        <li><strong>Approval signature</strong> - Untuk menyetujui dokumen</li>
+                                        <li><strong>Certification signature</strong> - Untuk mengontrol modifikasi</li>
+                                    </ul>
+                                </li>
+                                <li>Konfirmasi untuk menandatangani dokumen</li>
+                            </ol>
+                            
+                            <div class="warning-box">
+                                <strong><i class="fas fa-lock"></i> Penting:</strong> Certification signature harus diterapkan sebelum signature lainnya dan dapat mengontrol level perubahan yang diizinkan.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bagian Mengelola Agreement -->
+                <section class="tutorial-section">
+                    <h2><i class="fas fa-tasks"></i> Mengelola Agreement</h2>
+                    
+                    <div class="tutorial-subsection">
+                        <h3>Dashboard Agreement</h3>
+                        <div class="content-box">
+                            <h4>Mengakses dan mengelola agreement:</h4>
+                            <ol>
+                                <li>Pilih <strong>Go to Home view</strong></li>
+                                <li>Di bawah <strong>Agreements</strong>, pilih:
+                                    <ul>
+                                        <li><strong>Adobe Acrobat Sign</strong> untuk Enterprise users</li>
+                                        <li><strong>All agreements</strong> untuk Individual dan Teams users</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            
+                            <h4>Status Agreement yang tersedia:</h4>
+                            <div class="feature-grid">
+                                <div class="feature-item">
+                                    <h5><i class="fas fa-list"></i> All agreements</h5>
+                                    <p>Semua agreement dengan berbagai status</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5><i class="fas fa-spinner"></i> In progress</h5>
+                                    <p>Agreement yang sedang dalam proses</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5><i class="fas fa-clock"></i> Waiting for you</h5>
+                                    <p>Agreement yang memerlukan tanda tangan Anda</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5><i class="fas fa-check-circle"></i> Completed</h5>
+                                    <p>Agreement yang telah ditandatangani semua pihak</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5><i class="fas fa-file-alt"></i> Drafts</h5>
+                                    <p>Agreement yang disimpan sebagai draft</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5><i class="fas fa-copy"></i> Templates</h5>
+                                    <p>Template agreement yang dapat digunakan ulang</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-subsection">
+                        <h3>Aksi Manajemen Agreement</h3>
+                        <div class="content-box">
+                            <h4>Informasi yang dapat dilihat untuk setiap agreement:</h4>
+                            <ul>
+                                <li><strong>Agreement status</strong> - Status terkini</li>
+                                <li><strong>Expiration date</strong> - Tanggal kedaluwarsa</li>
+                                <li><strong>Creation date and time</strong> - Waktu pembuatan</li>
+                                <li><strong>Activity status</strong> - Status setiap penerima</li>
+                                <li><strong>Activity report</strong> - Laporan aktivitas agreement</li>
+                            </ul>
+                            
+                            <h4>Aksi yang dapat dilakukan:</h4>
+                            <div class="export-methods">
+                                <div class="method-item">
+                                    <h5><i class="fas fa-ban"></i> Cancel Agreement</h5>
+                                    <p>Batalkan agreement, tambahkan alasan, dan pilih notifikasi email</p>
+                                </div>
+                                <div class="method-item">
+                                    <h5><i class="fas fa-bell"></i> Send Reminders</h5>
+                                    <p>Kirim pengingat ke penerima dengan pesan optional</p>
+                                </div>
+                                <div class="method-item">
+                                    <h5><i class="fas fa-share"></i> Share Draft</h5>
+                                    <p>Bagikan draft agreement melalui sharing workflow</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bagian Batasan dan Permissions -->
+                <section class="tutorial-section">
+                    <h2><i class="fas fa-shield-alt"></i> Permissions & Limitasi PDF yang Ditandatangani</h2>
+                    
+                    <div class="tutorial-subsection">
+                        <h3>Memahami Limitasi Signed PDF</h3>
+                        <div class="content-box">
+                            <h4>Apa yang terjadi setelah PDF ditandatangani:</h4>
+                            <ul>
+                                <li><strong>Single signer:</strong> Anda dapat menghapus signature dengan right-click dan pilih "Clear Signature"</li>
+                                <li><strong>Multiple signers:</strong> Harus meminta copy unsigned atau minta penandatangan lain menghapus signature mereka</li>
+                                <li><strong>Digital signature:</strong> Mengunci dokumen dan mencegah perubahan lebih lanjut</li>
+                                <li><strong>Lock after signing:</strong> Memblokir semua edit dan signature tambahan</li>
+                            </ul>
+                            
+                            <div class="warning-box">
+                                <strong><i class="fas fa-exclamation-triangle"></i> Penting:</strong> PDF menjadi read-only untuk orang lain setelah digital signature diterapkan. Jika "Lock document after signing" dipilih, dokumen terkunci permanen.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-subsection">
+                        <h3>Best Practices untuk Menghindari Masalah</h3>
+                        <div class="content-box">
+                            <div class="tips-grid">
+                                <div class="tip-item">
+                                    <h4><i class="fas fa-save"></i> Backup Copy</h4>
+                                    <p>Selalu simpan salinan unsigned PDF sebelum menandatangani menggunakan "Save as"</p>
+                                </div>
+                                <div class="tip-item">
+                                    <h4><i class="fas fa-unlock"></i> Avoid Locking</h4>
+                                    <p>Hindari centang "Lock document after signing" jika butuh signature tambahan</p>
+                                </div>
+                                <div class="tip-item">
+                                    <h4><i class="fas fa-file-archive"></i> Keep Original</h4>
+                                    <p>Simpan versi unsigned asli dari dokumen untuk edit future</p>
+                                </div>
+                                <div class="tip-item">
+                                    <h4><i class="fas fa-users"></i> Coordinate Signing</h4>
+                                    <p>Koordinasikan urutan signing jika multiple signatures diperlukan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bagian Security & Compliance -->
+                <section class="tutorial-section">
+                    <h2><i class="fas fa-lock"></i> Keamanan & Compliance</h2>
+                    
+                    <div class="tutorial-subsection">
+                        <h3>Standar Keamanan Digital Signature</h3>
+                        <div class="content-box">
+                            <h4>Adobe Acrobat mendukung standar compliance:</h4>
+                            <ul>
+                                <li><strong>ETSI, PAdES, dan CAdES</strong> untuk perlindungan data</li>
+                                <li><strong>XML Signature standard (W3C)</strong> untuk integrity, authentication, dan non-repudiation</li>
+                                <li><strong>Adobe LiveCycle Rights Management</strong> untuk kebijakan akses terpusat</li>
+                                <li><strong>PKCS #12 files, smart cards, tokens</strong> untuk penyimpanan Digital ID</li>
+                            </ul>
+                            
+                            <div class="feature-highlight">
+                                <h5><i class="fas fa-certificate"></i> Adobe Approved Trust List (AATL):</h5>
+                                <ul>
+                                    <li>Program yang memungkinkan jutaan pengguna worldwide membuat digital signature terpercaya</li>
+                                    <li>Signature trusted saat dokumen dibuka di Acrobat atau Reader</li>
+                                    <li>Daftar member terpercaya tersedia di dokumentasi Adobe</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Navigasi Antar Tutorial -->
+                <section class="tutorial-navigation">
+                    <h2><i class="fas fa-book-open"></i> Tutorial Lainnya</h2>
+                    <div class="nav-grid">
+                        <a href="tutorial-membuat-pdf.html" class="nav-card">
+                            <h3><i class="fas fa-file-pdf"></i> Membuat PDF</h3>
+                            <p>Panduan lengkap membuat dan mengedit dokumen PDF</p>
+                        </a>
+                        <a href="tutorial-adobe-sign.html" class="nav-card">
+                            <h3><i class="fas fa-signature"></i> Adobe Sign</h3>
+                            <p>Tutorial Adobe Sign dan workflow persetujuan</p>
+                        </a>
+                        <a href="tutorial-share-review-export.html" class="nav-card">
+                            <h3><i class="fas fa-share-alt"></i> Berbagi & Export</h3>
+                            <p>Kolaborasi, review, dan ekspor dokumen PDF</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-book"></i> Manual Adobe</h3>
+                    <p>Panduan lengkap untuk Adobe Acrobat Pro, Adobe Sign, dan VIDA</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Tutorial E-Sign</h4>
+                    <ul>
+                        <li><a href="#digital-signature">Digital Signature</a></li>
+                        <li><a href="#e-signature">E-Signature</a></li>
+                        <li><a href="#bulk-signing">Bulk Signing</a></li>
+                        <li><a href="#manage-agreements">Manage Agreements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                        <li><a href="daftar-tutorial.html"><i class="fas fa-list"></i> Daftar Tutorial</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Manual Book Adobe Acrobat, Sign & VIDA. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

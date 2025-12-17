@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Manual Adobe - Beranda</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-book"></i> Buku Manual Adobe</h1>
+            <nav class="nav">
+                <a href="#" class="nav-link active" data-section="dashboard">Beranda</a>
+                <a href="#" class="nav-link" data-section="acrobat">Adobe Acrobat Pro</a>
+                <a href="#" class="nav-link" data-section="sign">Adobe Sign</a>
+                <a href="#" class="nav-link" data-section="vida">VIDA</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="section active">
+                <div class="hero">
+                    <h2>Selamat Datang di Buku Manual Adobe</h2>
+                    <p>Panduan lengkap untuk Adobe Acrobat Pro, Adobe Sign, dan solusi digital VIDA.</p>
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="card" data-section="acrobat">
+                        <div class="card-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Adobe Acrobat Pro</h3>
+                        <p>Tutorial dan panduan lengkap untuk fitur Adobe Acrobat Pro termasuk pembuatan PDF, pengeditan, dan alat-alat lanjutan.</p>
+                        <button class="btn-primary">Jelajahi Tutorial</button>
+                    </div>
+
+                    <div class="card" data-section="sign">
+                        <div class="card-icon">
+                            <i class="fas fa-signature"></i>
+                        </div>
+                        <h3>Adobe Sign</h3>
+                        <p>Pelajari alur kerja tanda tangan digital, manajemen dokumen, dan proses e-signature dengan Adobe Sign.</p>
+                        <button class="btn-primary">Panduan Pengguna</button>
+                    </div>
+
+                    <div class="card" data-section="vida">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Tanda Tangan Digital VIDA</h3>
+                        <p>Akses buku manual VIDA untuk tanda tangan digital, proses eKYC, dan manajemen akun lengkap.</p>
+                        <button class="btn-primary">Lihat Dokumen</button>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <h4>3</h4>
+                        <p>Bagian Manual</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>2</h4>
+                        <p>Panduan PDF VIDA</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>∞</h4>
+                        <p>Tutorial Adobe</p>
+                    </div>
+                </div>
+
+                <div class="complete-download">
+                    <div class="download-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Akses Manual Lengkap (81 Halaman)</h3>
+                    <p>Unduh buku manual Adobe komprehensif yang berisi semua tutorial dalam format PDF siap cetak</p>
+                    <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 15px;">
+                        <a href="Buku-Manual-Adobe-Complete-All.pdf" target="_blank" class="btn-primary" style="background: linear-gradient(135deg, #dc143c, #b91c3c); border: none; box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);">
+                            <i class="fas fa-download"></i> Download Manual Lengkap (3MB - 81 Hal)
+                        </a>
+                        <a href="daftar-tutorial.html" class="btn-secondary">
+                            <i class="fas fa-list"></i> Lihat Daftar Tutorial
+                        </a>
+                    </div>
+                    <div style="margin-top: 12px; color: #666; font-size: 0.9em; text-align: center;">
+                        <i class="fas fa-info-circle"></i> 
+                        Manual berisi: Tutorial Membuat PDF (14 hal) • Edit PDF (21 hal) • Berbagi & Export (12 hal) • E-Sign (16 hal) • Adobe Sign Enterprise (18 hal)
+                    </div>
+                </div>
+            </section>
+
+            <!-- Adobe Acrobat Section -->
+            <section id="acrobat" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-file-pdf"></i> Tutorial Adobe Acrobat Pro</h2>
+                    <p>Panduan dan tutorial lengkap dari dokumentasi resmi Adobe</p>
+                    <div class="section-actions">
+                        <a href="tutorial-membuat-pdf.html" target="_blank" class="btn-primary">
+                            <i class="fas fa-plus-circle"></i> Tutorial Membuat PDF
+                        </a>
+                        <a href="tutorial-edit-pdf.html" target="_blank" class="btn-primary">
+                            <i class="fas fa-edit"></i> Tutorial Edit PDF
+                        </a>
+                        <a href="tutorial-share-review-export.html" target="_blank" class="btn-primary">
+                            <i class="fas fa-share-alt"></i> Tutorial Berbagi & Export
+                        </a>
+                        <a href="tutorial-e-sign.html" target="_blank" class="btn-primary">
+                            <i class="fas fa-pen-nib"></i> Tutorial E-Sign
+                        </a>
+                        <a href="Buku-Manual-Adobe-Complete-All.pdf" target="_blank" class="btn-secondary" style="background: #dc143c; color: white; border: 2px solid #dc143c;">
+                            <i class="fas fa-download"></i> Download Manual Lengkap (81 Hal)
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tutorials-container">
+                    <div class="loading" id="acrobat-loading">
+                        <i class="fas fa-spinner fa-spin"></i> Memuat tutorial...
+                    </div>
+                    <div id="acrobat-content" class="tutorials-grid" style="display: none;">
+                        <!-- Content will be loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Adobe Sign Section -->
+            <section id="sign" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-signature"></i> Panduan Pengguna Adobe Sign</h2>
+                    <p>Alur kerja tanda tangan digital dan panduan manajemen dokumen</p>
+                    <div class="section-actions">
+                        <a href="tutorial-adobe-sign.html" target="_blank" class="btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Tutorial Adobe Sign Lengkap
+                        </a>
+                        <a href="Buku-Manual-Adobe-Complete-All.pdf" target="_blank" class="btn-secondary" style="background: #dc143c; color: white; border: 2px solid #dc143c;">
+                            <i class="fas fa-download"></i> Download Manual Lengkap (81 Hal)
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tutorials-container">
+                    <div class="loading" id="sign-loading">
+                        <i class="fas fa-spinner fa-spin"></i> Memuat panduan pengguna...
+                    </div>
+                    <div id="sign-content" class="tutorials-grid" style="display: none;">
+                        <!-- Content will be loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIDA Section -->
+            <section id="vida" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-shield-alt"></i> Tanda Tangan Digital VIDA</h2>
+                    <p>Buku manual dan panduan untuk solusi tanda tangan digital VIDA</p>
+                </div>
+                
+                <div class="pdf-viewer-container">
+                    <div class="pdf-info">
+                        <div class="info-box">
+                            <i class="fas fa-info-circle"></i>
+                            <strong>Status File PDF:</strong> File diperbarui dengan nama yang clean (tanpa spasi)
+                            <ul>
+                                <li>✅ "Adobe_Sign_powered_by_VIDA-Digital_Signing_for_External_User.pdf"</li>
+                                <li>✅ "Adobe_Sign_powered_by_VIDA_eKYC_Complete_Account_eSignature_Digital_Signature.pdf"</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-selector">
+                        <h3>Pilih Buku Manual:</h3>
+                        <div class="pdf-buttons">
+                            <button class="pdf-btn active" data-pdf="external-user">
+                                <i class="fas fa-user"></i>
+                                Tanda Tangan Digital untuk Pengguna Eksternal
+                            </button>
+                            <button class="pdf-btn" data-pdf="ekyc-complete">
+                                <i class="fas fa-id-card"></i>
+                                eKYC, Kelengkapan Akun & Tanda Tangan Elektronik
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-viewer">
+                        <div class="pdf-controls">
+                            <button id="prev-page"><i class="fas fa-chevron-left"></i></button>
+                            <span id="page-info">Halaman 1 dari 1</span>
+                            <button id="next-page"><i class="fas fa-chevron-right"></i></button>
+                            <button id="zoom-out"><i class="fas fa-search-minus"></i></button>
+                            <span id="zoom-level">100%</span>
+                            <button id="zoom-in"><i class="fas fa-search-plus"></i></button>
+                            <button id="fullscreen"><i class="fas fa-expand"></i></button>
+                        </div>
+                        <canvas id="pdf-canvas"></canvas>
+                        <div id="pdf-loading" class="pdf-loading">
+                            <i class="fas fa-spinner fa-spin"></i> Memuat PDF...
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Buku Manual Adobe. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="js/pdf-generator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

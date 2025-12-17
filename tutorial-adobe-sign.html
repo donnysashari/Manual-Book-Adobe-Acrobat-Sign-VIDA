@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Lengkap: Adobe Sign - Buku Manual Adobe</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tutorial-page.css">
+    <link rel="stylesheet" href="styles/tutorial-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-book"></i> Buku Manual Adobe</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+                </a>
+                <a href="#" class="nav-link active">Tutorial Adobe Sign</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main tutorial-main">
+        <div class="container">
+            <div class="tutorial-hero">
+                <div class="tutorial-breadcrumb">
+                    <a href="index.html">Beranda</a> 
+                    <i class="fas fa-chevron-right"></i> 
+                    <a href="index.html#sign">Adobe Sign</a> 
+                    <i class="fas fa-chevron-right"></i> 
+                    <span>Tutorial Lengkap</span>
+                </div>
+                
+                <h1><i class="fas fa-signature"></i> Tutorial Lengkap: Adobe Sign</h1>
+                <p class="tutorial-subtitle">Panduan komprehensif untuk menggunakan Adobe Sign - dari dasar hingga lanjutan untuk tanda tangan digital dan manajemen dokumen</p>
+                
+                <div class="tutorial-meta">
+                    <span class="meta-item"><i class="fas fa-clock"></i> 25 menit</span>
+                    <span class="meta-item"><i class="fas fa-signal"></i> Pemula - Lanjutan</span>
+                    <span class="meta-item"><i class="fas fa-calendar"></i> Diperbarui: Desember 2025</span>
+                </div>
+            </div>
+
+            <div class="tutorial-content-wrapper">
+                <aside class="tutorial-sidebar">
+                    <div class="sidebar-content">
+                        <h3><i class="fas fa-list"></i> Daftar Isi</h3>
+                        <ul class="tutorial-toc">
+                            <li><a href="#introduction">Pengenalan Adobe Sign</a></li>
+                            <li><a href="#getting-started">Memulai dengan Adobe Sign</a></li>
+                            <li><a href="#sending-documents">Mengirim Dokumen untuk Tanda Tangan</a></li>
+                            <li><a href="#signing-documents">Menandatangani Dokumen</a></li>
+                            <li><a href="#managing-documents">Mengelola Dokumen</a></li>
+                            <li><a href="#advanced-features">Fitur Lanjutan</a></li>
+                            <li><a href="#templates">Template dan Workflow</a></li>
+                            <li><a href="#security">Keamanan dan Compliance</a></li>
+                            <li><a href="#troubleshooting">Troubleshooting</a></li>
+                        </ul>
+                        
+                        <div class="sidebar-actions">
+                            <button onclick="window.print()" class="btn-secondary">
+                                <i class="fas fa-print"></i> Cetak Tutorial
+                            </button>
+                            <a href="https://helpx.adobe.com/sign/" 
+                               target="_blank" class="btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Dokumentasi Resmi
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="tutorial-article">
+                    <section id="introduction" class="tutorial-section">
+                        <h2><i class="fas fa-info-circle"></i> Pengenalan Adobe Sign</h2>
+                        
+                        <div class="info-box">
+                            <p>Adobe Sign adalah solusi tanda tangan elektronik terdepan yang memungkinkan Anda mengirim, menandatangani, melacak, dan mengelola proses tanda tangan dari mana saja dan kapan saja.</p>
+                        </div>
+                        
+                        <h3>Apa itu Adobe Sign?</h3>
+                        <p>Adobe Sign adalah layanan cloud yang memungkinkan Anda untuk:</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> Mengirim dokumen untuk tanda tangan elektronik</li>
+                            <li><i class="fas fa-check"></i> Menandatangani dokumen secara digital dari perangkat apa pun</li>
+                            <li><i class="fas fa-check"></i> Melacak status dokumen secara real-time</li>
+                            <li><i class="fas fa-check"></i> Mengotomatisasi workflow approval dan signature</li>
+                            <li><i class="fas fa-check"></i> Memastikan kepatuhan legal dan keamanan dokumen</li>
+                        </ul>
+
+                        <h3>Keuntungan Menggunakan Adobe Sign</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <i class="fas fa-clock"></i>
+                                <h4>Hemat Waktu</h4>
+                                <p>Proses tanda tangan yang biasanya memakan waktu berhari-hari kini dapat diselesaikan dalam hitungan menit</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Aman & Legal</h4>
+                                <p>Memenuhi standar keamanan tertinggi dan diakui secara legal di seluruh dunia</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Akses Anywhere</h4>
+                                <p>Dapat diakses dari desktop, tablet, atau smartphone dengan koneksi internet</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Efisiensi Tinggi</h4>
+                                <p>Mengurangi biaya cetak, pengiriman, dan penyimpanan dokumen fisik</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="getting-started" class="tutorial-section">
+                        <h2><i class="fas fa-play-circle"></i> Memulai dengan Adobe Sign</h2>
+                        
+                        <h3>1. Setup Akun Adobe Sign</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Kunjungi Adobe Sign</h4>
+                                    <p>Buka <strong>https://acrobat.adobe.com/id/en/sign.html</strong> di browser Anda</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Buat Akun atau Login</h4>
+                                    <p>Jika belum memiliki akun Adobe, klik <strong>"Start free trial"</strong>. Jika sudah punya, klik <strong>"Sign In"</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Verifikasi Email</h4>
+                                    <p>Check email Anda dan klik link verifikasi yang dikirimkan Adobe</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Setup Profile</h4>
+                                    <p>Lengkapi informasi profil termasuk nama, perusahaan, dan preferensi tanda tangan</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>2. Interface Adobe Sign</h3>
+                        <div class="interface-overview">
+                            <h4>Dashboard Utama</h4>
+                            <ul>
+                                <li><strong>Home:</strong> Ringkasan aktivitas dan dokumen terbaru</li>
+                                <li><strong>Send:</strong> Kirim dokumen untuk tanda tangan</li>
+                                <li><strong>Manage:</strong> Kelola semua dokumen dan transaksi</li>
+                                <li><strong>Reports:</strong> Laporan dan analitik</li>
+                                <li><strong>Settings:</strong> Pengaturan akun dan preferensi</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="sending-documents" class="tutorial-section">
+                        <h2><i class="fas fa-paper-plane"></i> Mengirim Dokumen untuk Tanda Tangan</h2>
+                        
+                        <div class="highlight-box">
+                            <h3>Langkah-langkah Mengirim Dokumen</h3>
+                            <p>Ini adalah proses inti Adobe Sign yang paling sering digunakan.</p>
+                        </div>
+
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Upload Dokumen</h4>
+                                    <p>Di dashboard, klik <strong>"Send"</strong> → <strong>"Send for Signature"</strong></p>
+                                    <ul>
+                                        <li>Drag & drop file ke area upload</li>
+                                        <li>Atau klik "Select files from your computer"</li>
+                                        <li>Supported formats: PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, TXT, RTF, HTML</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Tambah Recipients (Penerima)</h4>
+                                    <p>Masukkan email address orang yang perlu menandatangani:</p>
+                                    <ul>
+                                        <li><strong>Signer:</strong> Orang yang akan menandatangani</li>
+                                        <li><strong>Approver:</strong> Orang yang perlu approve sebelum signature</li>
+                                        <li><strong>Certified Recipient:</strong> Hanya receive copy, tidak perlu action</li>
+                                        <li><strong>Delegator:</strong> Bisa delegate signature ke orang lain</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Atur Urutan Signing (Optional)</h4>
+                                    <p>Jika ada multiple signers, tentukan urutan:</p>
+                                    <ul>
+                                        <li>Centang "Recipients sign in order"</li>
+                                        <li>Drag untuk mengubah urutan</li>
+                                        <li>Setiap signer akan menerima email setelah signer sebelumnya selesai</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Tulis Pesan dan Subject</h4>
+                                    <p>Customize pesan email yang akan diterima recipients:</p>
+                                    <ul>
+                                        <li><strong>Subject:</strong> Buat subject line yang clear</li>
+                                        <li><strong>Message:</strong> Jelaskan konteks dokumen dan instruksi jika perlu</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Preview & Send</h4>
+                                    <p>Klik <strong>"Next"</strong> untuk preview dokumen dan tempatkan signature fields</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Menempatkan Signature Fields</h3>
+                        <div class="field-placement">
+                            <h4>Jenis-jenis Fields yang Tersedia:</h4>
+                            <div class="form-fields-grid">
+                                <div class="field-card">
+                                    <i class="fas fa-signature"></i>
+                                    <h4>Signature</h4>
+                                    <p>Tanda tangan elektronik</p>
+                                </div>
+                                <div class="field-card">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h4>Date</h4>
+                                    <p>Tanggal tanda tangan</p>
+                                </div>
+                                <div class="field-card">
+                                    <i class="fas fa-font"></i>
+                                    <h4>Text</h4>
+                                    <p>Input teks bebas</p>
+                                </div>
+                                <div class="field-card">
+                                    <i class="fas fa-check-square"></i>
+                                    <h4>Checkbox</h4>
+                                    <p>Persetujuan ya/tidak</p>
+                                </div>
+                                <div class="field-card">
+                                    <i class="fas fa-dot-circle"></i>
+                                    <h4>Radio Button</h4>
+                                    <p>Pilihan eksklusif</p>
+                                </div>
+                                <div class="field-card">
+                                    <i class="fas fa-list"></i>
+                                    <h4>Dropdown</h4>
+                                    <p>Menu pilihan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="signing-documents" class="tutorial-section">
+                        <h2><i class="fas fa-pen-alt"></i> Menandatangani Dokumen</h2>
+                        
+                        <h3>Proses Signing untuk Recipients</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Menerima Email</h4>
+                                    <p>Recipient akan menerima email dengan subject yang Anda tulis</p>
+                                    <div class="tip">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>Email berisi link "Review and Sign"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Buka Dokumen</h4>
+                                    <p>Klik <strong>"Review and Sign"</strong> untuk membuka dokumen di browser</p>
+                                    <ul>
+                                        <li>Tidak perlu install software apapun</li>
+                                        <li>Bisa dibuka di desktop, tablet, atau smartphone</li>
+                                        <li>Support semua browser modern</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Review Dokumen</h4>
+                                    <p>Baca dokumen dengan teliti sebelum menandatangani</p>
+                                    <ul>
+                                        <li>Scroll untuk membaca seluruh dokumen</li>
+                                        <li>Zoom in/out jika perlu</li>
+                                        <li>Perhatikan field yang harus diisi (highlighted)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Isi Fields yang Diperlukan</h4>
+                                    <p>Klik pada setiap field yang highlighted untuk mengisinya:</p>
+                                    <ul>
+                                        <li><strong>Signature:</strong> Draw, type, atau upload image signature</li>
+                                        <li><strong>Initials:</strong> Sama seperti signature, untuk initial</li>
+                                        <li><strong>Text fields:</strong> Ketik informasi yang diperlukan</li>
+                                        <li><strong>Date:</strong> Pilih tanggal atau gunakan tanggal hari ini</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Submit Signature</h4>
+                                    <p>Setelah semua field terisi, klik <strong>"Click to Sign"</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Metode Tanda Tangan</h3>
+                        <div class="signing-methods">
+                            <div class="method-card">
+                                <h4><i class="fas fa-pencil-alt"></i> Draw Signature</h4>
+                                <ul>
+                                    <li>Gambar tanda tangan dengan mouse atau touch screen</li>
+                                    <li>Paling natural untuk tablet dan smartphone</li>
+                                    <li>Bisa adjust thickness dan smoothness</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="method-card">
+                                <h4><i class="fas fa-keyboard"></i> Type Signature</h4>
+                                <ul>
+                                    <li>Ketik nama Anda dengan berbagai font style</li>
+                                    <li>Adobe menyediakan beberapa handwriting fonts</li>
+                                    <li>Cepat dan konsisten</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="method-card">
+                                <h4><i class="fas fa-upload"></i> Upload Image</h4>
+                                <ul>
+                                    <li>Upload foto tanda tangan yang sudah ada</li>
+                                    <li>Format: PNG, JPG, GIF</li>
+                                    <li>Background transparan lebih baik</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="managing-documents" class="tutorial-section">
+                        <h2><i class="fas fa-folder-open"></i> Mengelola Dokumen</h2>
+                        
+                        <h3>Dashboard Management</h3>
+                        <p>Di section <strong>"Manage"</strong>, Anda dapat melihat semua dokumen dengan status:</p>
+                        
+                        <div class="status-grid">
+                            <div class="status-card waiting">
+                                <i class="fas fa-clock"></i>
+                                <h4>Waiting for Others</h4>
+                                <p>Dokumen yang menunggu tanda tangan dari recipients</p>
+                            </div>
+                            <div class="status-card in-progress">
+                                <i class="fas fa-spinner"></i>
+                                <h4>In Progress</h4>
+                                <p>Dokumen dalam proses signing (ada yang sudah sign, ada yang belum)</p>
+                            </div>
+                            <div class="status-card completed">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>Completed</h4>
+                                <p>Semua pihak sudah menandatangani</p>
+                            </div>
+                            <div class="status-card cancelled">
+                                <i class="fas fa-times-circle"></i>
+                                <h4>Cancelled</h4>
+                                <p>Dokumen yang dibatalkan oleh sender</p>
+                            </div>
+                        </div>
+
+                        <h3>Actions yang Dapat Dilakukan</h3>
+                        <div class="actions-list">
+                            <div class="action-item">
+                                <i class="fas fa-eye"></i>
+                                <div>
+                                    <h4>View Document</h4>
+                                    <p>Lihat dokumen dan status signing dari setiap recipient</p>
+                                </div>
+                            </div>
+                            <div class="action-item">
+                                <i class="fas fa-download"></i>
+                                <div>
+                                    <h4>Download</h4>
+                                    <p>Download dokumen final (setelah completed) atau audit trail</p>
+                                </div>
+                            </div>
+                            <div class="action-item">
+                                <i class="fas fa-bell"></i>
+                                <div>
+                                    <h4>Send Reminder</h4>
+                                    <p>Kirim reminder ke recipients yang belum sign</p>
+                                </div>
+                            </div>
+                            <div class="action-item">
+                                <i class="fas fa-ban"></i>
+                                <div>
+                                    <h4>Cancel</h4>
+                                    <p>Batalkan dokumen yang masih in progress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="advanced-features" class="tutorial-section">
+                        <h2><i class="fas fa-cogs"></i> Fitur Lanjutan</h2>
+                        
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <i class="fas fa-users"></i>
+                                <h3>Bulk Send</h3>
+                                <p>Kirim dokumen yang sama ke multiple recipients sekaligus</p>
+                                <ul>
+                                    <li>Upload CSV file dengan data recipients</li>
+                                    <li>Merge field untuk personalisasi</li>
+                                    <li>Efisien untuk contract mass signing</li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-card">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>Adobe Sign Mobile App</h3>
+                                <p>App untuk iOS dan Android dengan fitur lengkap</p>
+                                <ul>
+                                    <li>Send, sign, dan track documents</li>
+                                    <li>Push notifications untuk updates</li>
+                                    <li>Offline capability untuk signing</li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-card">
+                                <i class="fas fa-plug"></i>
+                                <h3>Integrations</h3>
+                                <p>Integrasi dengan aplikasi business lainnya</p>
+                                <ul>
+                                    <li><strong>Salesforce:</strong> Send contracts dari Salesforce</li>
+                                    <li><strong>Microsoft:</strong> Word, Outlook, SharePoint, Teams</li>
+                                    <li><strong>Google:</strong> Gmail, Google Drive</li>
+                                    <li><strong>Box, Dropbox:</strong> Cloud storage integration</li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-card">
+                                <i class="fas fa-robot"></i>
+                                <h3>API & Webhooks</h3>
+                                <p>Untuk developer dan advanced automation</p>
+                                <ul>
+                                    <li>REST API untuk custom integration</li>
+                                    <li>Webhooks untuk real-time notifications</li>
+                                    <li>SDKs untuk berbagai programming languages</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="templates" class="tutorial-section">
+                        <h2><i class="fas fa-copy"></i> Template dan Workflow</h2>
+                        
+                        <h3>Membuat Template</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Buat Template dari Dokumen</h4>
+                                    <p>Upload dokumen yang sering digunakan ke <strong>"Library"</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Setup Fields Template</h4>
+                                    <p>Tempatkan signature fields, text fields, dll. di posisi yang tepat</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Save as Template</h4>
+                                    <p>Simpan dengan nama yang descriptive untuk reuse</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Workflow Automation</h3>
+                        <p><span class="badge pro">Enterprise Only</span></p>
+                        <ul>
+                            <li><strong>Auto-routing:</strong> Dokumen otomatis dikirim ke approver sequence</li>
+                            <li><strong>Conditional logic:</strong> Routing berdasarkan isi dokumen</li>
+                            <li><strong>Integration triggers:</strong> Start workflow dari sistem lain</li>
+                            <li><strong>Custom branding:</strong> Logo dan branding perusahaan</li>
+                        </ul>
+                    </section>
+
+                    <section id="security" class="tutorial-section">
+                        <h2><i class="fas fa-shield-alt"></i> Keamanan dan Compliance</h2>
+                        
+                        <h3>Standar Keamanan</h3>
+                        <div class="security-features">
+                            <div class="security-item">
+                                <i class="fas fa-lock"></i>
+                                <h4>Encryption</h4>
+                                <p>AES 256-bit encryption untuk data in transit dan at rest</p>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-certificate"></i>
+                                <h4>Digital Certificates</h4>
+                                <p>PKI-based digital certificates untuk advanced signatures</p>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-history"></i>
+                                <h4>Audit Trail</h4>
+                                <p>Detailed log semua aktivitas dan changes dalam dokumen</p>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-user-check"></i>
+                                <h4>Identity Verification</h4>
+                                <p>Knowledge-based authentication (KBA) dan phone verification</p>
+                            </div>
+                        </div>
+
+                        <h3>Compliance Standards</h3>
+                        <div class="compliance-grid">
+                            <div class="compliance-card">
+                                <h4>ESIGN Act (US)</h4>
+                                <p>Electronic signature legally binding di Amerika Serikat</p>
+                            </div>
+                            <div class="compliance-card">
+                                <h4>eIDAS (EU)</h4>
+                                <p>European regulation untuk electronic identification dan signatures</p>
+                            </div>
+                            <div class="compliance-card">
+                                <h4>SOC 2 Type 2</h4>
+                                <p>Security controls dan processes certification</p>
+                            </div>
+                            <div class="compliance-card">
+                                <h4>ISO 27001</h4>
+                                <p>Information security management standards</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="troubleshooting" class="tutorial-section">
+                        <h2><i class="fas fa-tools"></i> Troubleshooting</h2>
+                        
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Recipient tidak menerima email invitation</h3>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Check spam/junk folder</li>
+                                    <li>Pastikan email address benar</li>
+                                    <li>Minta IT admin whitelist domain @adobesign.com</li>
+                                    <li>Kirim ulang invitation dari dashboard</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Signature field tidak bisa ditempatkan dengan tepat</h3>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Zoom in untuk precision placement</li>
+                                    <li>Gunakan grid snap untuk alignment</li>
+                                    <li>Convert dokumen ke PDF terlebih dahulu jika dari Word/Excel</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Dokumen stuck di "Waiting for others"</h3>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Send reminder ke recipient yang belum sign</li>
+                                    <li>Check apakah ada signing order yang harus diikuti</li>
+                                    <li>Verifikasi apakah recipient bisa access link</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Mobile signing tidak berfungsi</h3>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Update browser ke versi terbaru</li>
+                                    <li>Download Adobe Sign mobile app</li>
+                                    <li>Check koneksi internet</li>
+                                    <li>Clear browser cache dan cookies</li>
+                                </ul>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3><i class="fas fa-question-circle"></i> Tidak bisa download signed document</h3>
+                                <p><strong>Solusi:</strong></p>
+                                <ul>
+                                    <li>Pastikan dokumen sudah fully completed</li>
+                                    <li>Try different browser atau incognito mode</li>
+                                    <li>Check download permissions di browser</li>
+                                    <li>Contact support jika masih ada masalah</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tip-box">
+                            <h4><i class="fas fa-lightbulb"></i> Tips untuk Troubleshooting</h4>
+                            <ul>
+                                <li><strong>Check Network:</strong> Pastikan koneksi internet stabil</li>
+                                <li><strong>Browser Compatibility:</strong> Gunakan Chrome, Firefox, Safari, atau Edge terbaru</li>
+                                <li><strong>Clear Cache:</strong> Clear browser cache jika ada issue loading</li>
+                                <li><strong>Document Format:</strong> PDF format memberikan hasil terbaik</li>
+                                <li><strong>Contact Support:</strong> Adobe Sign support tersedia 24/7 untuk Enterprise customers</li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Buku Manual Adobe. Tutorial berdasarkan dokumentasi resmi Adobe Sign (Diperbarui Desember 2025)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Highlight current section in sidebar
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.tutorial-section');
+            const tocLinks = document.querySelectorAll('.tutorial-toc a');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100) {
+                    currentSection = section.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
