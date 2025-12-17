@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Manual Adobe - Panduan Lengkap</title>
+    <style>
+        @page {
+            margin: 2.5cm;
+            size: A4;
+            @bottom-center {
+                content: "Buku Manual Adobe - Halaman " counter(page);
+                font-size: 9pt;
+                color: #666;
+            }
+        }
+        
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333;
+            max-width: 100%;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .cover {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 150px;
+        }
+        
+        .cover h1 {
+            font-size: 28pt;
+            color: #dc143c;
+            margin-bottom: 30pt;
+            font-weight: bold;
+        }
+        
+        .cover h2 {
+            font-size: 18pt;
+            color: #666;
+            margin-bottom: 50pt;
+            font-weight: normal;
+        }
+        
+        .cover .version {
+            font-size: 12pt;
+            color: #999;
+            margin-top: 100pt;
+        }
+        
+        h1 {
+            color: #dc143c;
+            font-size: 18pt;
+            font-weight: bold;
+            margin: 30pt 0 15pt 0;
+            page-break-after: avoid;
+            border-bottom: 3px solid #dc143c;
+            padding-bottom: 8pt;
+        }
+        
+        h2 {
+            color: #dc143c;
+            font-size: 16pt;
+            font-weight: bold;
+            margin: 25pt 0 10pt 0;
+            page-break-after: avoid;
+            border-bottom: 1px solid #dc143c;
+            padding-bottom: 5pt;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 13pt;
+            font-weight: bold;
+            margin: 20pt 0 8pt 0;
+            page-break-after: avoid;
+        }
+        
+        h4 {
+            color: #555;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 15pt 0 5pt 0;
+        }
+        
+        p, li {
+            margin-bottom: 6pt;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        
+        ul, ol {
+            margin: 10pt 0;
+            padding-left: 25pt;
+        }
+        
+        li {
+            margin-bottom: 4pt;
+        }
+        
+        .toc {
+            page-break-after: always;
+            margin-bottom: 30pt;
+        }
+        
+        .toc h1 {
+            text-align: center;
+            border: none;
+        }
+        
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .toc > ul > li {
+            margin-bottom: 10pt;
+            font-weight: bold;
+            font-size: 12pt;
+        }
+        
+        .toc ul ul {
+            margin-top: 5pt;
+            padding-left: 30pt;
+        }
+        
+        .toc ul ul li {
+            font-weight: normal;
+            margin-bottom: 4pt;
+            font-size: 11pt;
+        }
+        
+        .section {
+            page-break-before: always;
+            margin-bottom: 30pt;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dc143c;
+            border-left: 4px solid #dc143c;
+            padding: 15pt;
+            margin: 15pt 0;
+            page-break-inside: avoid;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-left: 4px solid #ffc107;
+            padding: 15pt;
+            margin: 15pt 0;
+            page-break-inside: avoid;
+        }
+        
+        .tip-box {
+            background-color: #d1ecf1;
+            border: 1px solid #17a2b8;
+            border-left: 4px solid #17a2b8;
+            padding: 15pt;
+            margin: 15pt 0;
+            page-break-inside: avoid;
+        }
+        
+        .steps {
+            margin: 15pt 0;
+        }
+        
+        .steps ol {
+            counter-reset: step-counter;
+        }
+        
+        .steps li {
+            margin-bottom: 8pt;
+            page-break-inside: avoid;
+        }
+        
+        strong {
+            color: #dc143c;
+            font-weight: bold;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15pt;
+            margin: 15pt 0;
+        }
+        
+        .feature-item {
+            border: 1px solid #ddd;
+            padding: 10pt;
+            page-break-inside: avoid;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15pt 0;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 8pt;
+            text-align: left;
+        }
+        
+        .comparison-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        
+        .footer-info {
+            position: fixed;
+            bottom: 1cm;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 9pt;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <div class="cover">
+        <h1>BUKU MANUAL ADOBE</h1>
+        <h2>Panduan Lengkap Adobe Acrobat Pro, Adobe Sign, dan VIDA</h2>
+        
+        <div style="margin: 80pt 0;">
+            <p style="font-size: 14pt; color: #666;">
+                <strong>Tutorial Komprehensif</strong><br>
+                5 Bagian Tutorial • 75+ Langkah Detail<br>
+                Dokumentasi Resmi Adobe Indonesia
+            </p>
+        </div>
+        
+        <div class="version">
+            <p>Versi 1.0 • Desember 2024</p>
+            <p>© 2024 Manual Book Adobe. Semua hak dilindungi.</p>
+        </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h1>DAFTAR ISI</h1>
+        
+        <ul>
+            <li>Pengantar Buku Manual Adobe</li>
+            <li>Tutorial Adobe Acrobat Pro
+                <ul>
+                    <li>Membuat PDF - Konversi dari berbagai format file</li>
+                    <li>Edit PDF - Mengedit teks, gambar, dan elemen PDF</li>
+                    <li>Berbagi & Export - Kolaborasi dan ekspor dokumen</li>
+                    <li>E-Sign Lengkap - E-signature dan digital signature</li>
+                </ul>
+            </li>
+            <li>Tutorial Adobe Sign
+                <ul>
+                    <li>Setup dan Konfigurasi Pengguna</li>
+                    <li>Mengirim Perjanjian untuk Ditandatangani</li>
+                    <li>Mengelola Perjanjian dan Workflow</li>
+                    <li>Fitur Lanjutan dan Integrasi</li>
+                </ul>
+            </li>
+            <li>Tanda Tangan Digital VIDA
+                <ul>
+                    <li>Digital Signing untuk Pengguna Eksternal</li>
+                    <li>eKYC dan Kelengkapan Akun</li>
+                    <li>eSignature dan Digital Signature VIDA</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Pengantar -->
+    <div class="section">
+        <h1>Pengantar Buku Manual Adobe</h1>
+        
+        <p>Selamat datang di Buku Manual Adobe yang komprehensif ini. Panduan lengkap untuk <strong>Adobe Acrobat Pro</strong>, <strong>Adobe Sign</strong>, dan <strong>solusi digital VIDA</strong> telah dikompilasi dengan seksama untuk memberikan Anda pemahaman mendalam tentang alat-alat digital terdepan dalam industri manajemen dokumen.</p>
+        
+        <h2>Tentang Manual Ini</h2>
+        <p>Manual ini berisi tutorial dan panduan lengkap yang disusun berdasarkan dokumentasi resmi Adobe dan praktik terbaik industri. Setiap bagian dirancang untuk memberikan pemahaman praktis yang dapat langsung diterapkan dalam pekerjaan sehari-hari.</p>
+        
+        <h3>Apa yang Akan Anda Pelajari</h3>
+        <div class="highlight-box">
+            <ul>
+                <li><strong>Adobe Acrobat Pro:</strong> Dari pembuatan PDF hingga editing lanjutan, berbagi dokumen, dan e-signature</li>
+                <li><strong>Adobe Sign:</strong> Workflow tanda tangan digital, manajemen perjanjian, dan integrasi enterprise</li>
+                <li><strong>VIDA Digital Signature:</strong> eKYC, kelengkapan akun, dan tanda tangan digital bersertifikat</li>
+            </ul>
+        </div>
+        
+        <h3>Statistik Manual</h3>
+        <div class="tip-box">
+            <ul>
+                <li><strong>5 Tutorial Utama</strong> - Mencakup semua aspek penting Adobe ecosystem</li>
+                <li><strong>75+ Langkah Detail</strong> - Panduan step-by-step yang mudah diikuti</li>
+                <li><strong>Dokumentasi Terkini</strong> - Berdasarkan Adobe documentation versi terbaru</li>
+                <li><strong>Bahasa Indonesia</strong> - Dilokalisasi untuk pengguna Indonesia</li>
+            </ul>
+        </div>
+        
+        <h3>Cara Menggunakan Manual Ini</h3>
+        <p>Setiap tutorial dalam manual ini dapat dibaca secara independen atau sebagai bagian dari pembelajaran menyeluruh. Kami merekomendasikan untuk:</p>
+        
+        <ol>
+            <li><strong>Mulai dari Tutorial Membuat PDF</strong> untuk memahami dasar-dasar Adobe Acrobat Pro</li>
+            <li><strong>Lanjutkan ke Edit PDF</strong> untuk mempelajari teknik editing lanjutan</li>
+            <li><strong>Eksplorasi Berbagi & Export</strong> untuk kolaborasi dokumen</li>
+            <li><strong>Kuasai E-Sign</strong> untuk tanda tangan elektronik dan digital</li>
+            <li><strong>Integrasikan Adobe Sign</strong> untuk workflow enterprise</li>
+        </ol>
+        
+        <div class="warning-box">
+            <p><strong>Catatan Penting:</strong> Manual ini menggunakan dokumentasi resmi Adobe versi terbaru. Beberapa fitur mungkin berbeda tergantung versi software yang Anda gunakan.</p>
+        </div>
+    </div>
+
+    <!-- Tutorial 1: Membuat PDF -->
+    <div class="section">
+        <h1>Tutorial Membuat PDF</h1>
+        
+        <h2>Pengantar Pembuatan PDF</h2>
+        <p>Adobe Acrobat Pro menyediakan berbagai metode untuk membuat file PDF. Tutorial ini akan membahas semua cara mulai dari yang paling sederhana hingga yang paling kompleks.</p>
+        
+        <h3>Metode Pembuatan PDF</h3>
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metode</th>
+                        <th>Terbaik Untuk</th>
+                        <th>Kompleksitas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Halaman Kosong</td>
+                        <td>Dokumen sederhana 1-2 halaman</td>
+                        <td>Mudah</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Office</td>
+                        <td>Dokumen Word, Excel, PowerPoint</td>
+                        <td>Mudah</td>
+                    </tr>
+                    <tr>
+                        <td>Konversi File</td>
+                        <td>Gambar, HTML, teks</td>
+                        <td>Sedang</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Pesan email dan attachment</td>
+                        <td>Sedang</td>
+                    </tr>
+                    <tr>
+                        <td>Form PDF</td>
+                        <td>Form interaktif</td>
+                        <td>Lanjutan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2>1. Membuat PDF dari Halaman Kosong</h2>
+        <div class="steps">
+            <h4>Langkah-langkah:</h4>
+            <ol>
+                <li>Buka <strong>Adobe Acrobat Pro</strong></li>
+                <li>Pilih <strong>Tools</strong> dari menu utama</li>
+                <li>Klik <strong>Create PDF</strong></li>
+                <li>Pilih <strong>Blank Page</strong></li>
+                <li>Klik <strong>Create</strong></li>
+                <li>Dokumen PDF kosong akan terbuka di editor</li>
+                <li>Gunakan tool <strong>Add Text</strong> untuk menambahkan konten</li>
+                <li>Simpan dengan <strong>Ctrl+S</strong> (Windows) atau <strong>Cmd+S</strong> (Mac)</li>
+            </ol>
+        </div>
+        
+        <div class="tip-box">
+            <p><strong>Tips:</strong> Metode ini cocok untuk membuat dokumen sederhana seperti surat, memo, atau formulir dasar.</p>
+        </div>
+        
+        <h2>2. Konversi Dokumen Microsoft Office</h2>
+        <div class="steps">
+            <h4>Dari Microsoft Word:</h4>
+            <ol>
+                <li>Buka dokumen <strong>Word</strong> yang ingin dikonversi</li>
+                <li>Pilih tab <strong>Acrobat</strong> di ribbon Word</li>
+                <li>Klik <strong>Create PDF</strong></li>
+                <li>Atur pengaturan konversi jika diperlukan</li>
+                <li>Klik <strong>Create PDF</strong> untuk memulai konversi</li>
+                <li>PDF akan terbuka di Acrobat Pro</li>
+                <li>Review dan simpan hasil konversi</li>
+            </ol>
+        </div>
+        
+        <div class="steps">
+            <h4>Dari Excel atau PowerPoint:</h4>
+            <ol>
+                <li>Buka file Excel/PowerPoint</li>
+                <li>Pilih <strong>File > Export > Create PDF/XPS</strong></li>
+                <li>Tentukan lokasi dan nama file</li>
+                <li>Klik <strong>Options</strong> untuk pengaturan lanjutan</li>
+                <li>Pilih range halaman dan kualitas yang diinginkan</li>
+                <li>Klik <strong>Publish</strong></li>
+            </ol>
+        </div>
+        
+        <h2>3. Konversi dari Format File Lain</h2>
+        <div class="steps">
+            <h4>Konversi Gambar ke PDF:</h4>
+            <ol>
+                <li>Di Acrobat Pro, pilih <strong>Tools > Create PDF</strong></li>
+                <li>Pilih <strong>Single File</strong></li>
+                <li>Klik <strong>Select a file</strong></li>
+                <li>Pilih file gambar (JPG, PNG, TIFF, dll.)</li>
+                <li>Klik <strong>Create</strong></li>
+                <li>Atur pengaturan gambar jika diperlukan</li>
+                <li>PDF akan dibuat dengan gambar sebagai konten</li>
+            </ol>
+        </div>
+        
+        <div class="highlight-box">
+            <h4>Format File yang Didukung:</h4>
+            <ul>
+                <li><strong>Gambar:</strong> JPEG, PNG, TIFF, BMP, GIF</li>
+                <li><strong>Dokumen:</strong> Word, Excel, PowerPoint, RTF</li>
+                <li><strong>Web:</strong> HTML, HTM</li>
+                <li><strong>Teks:</strong> TXT, CSV</li>
+                <li><strong>Vector:</strong> AI, EPS, SVG</li>
+            </ul>
+        </div>
+        
+        <h2>4. Membuat Form PDF Interaktif</h2>
+        <div class="steps">
+            <ol>
+                <li>Buat atau buka dokumen yang akan dijadikan form</li>
+                <li>Di Acrobat Pro, pilih <strong>Tools > Prepare Form</strong></li>
+                <li>Pilih sumber dokumen (file atau scanner)</li>
+                <li>Acrobat akan mendeteksi field form secara otomatis</li>
+                <li>Edit dan tambahkan field form sesuai kebutuhan:
+                    <ul>
+                        <li><strong>Text Field</strong> - untuk input teks</li>
+                        <li><strong>Check Box</strong> - untuk pilihan ya/tidak</li>
+                        <li><strong>Radio Button</strong> - untuk pilihan tunggal</li>
+                        <li><strong>Dropdown</strong> - untuk pilihan dari daftar</li>
+                        <li><strong>Signature Field</strong> - untuk tanda tangan</li>
+                    </ul>
+                </li>
+                <li>Atur properties setiap field (required, validation, dll.)</li>
+                <li>Preview dan test form</li>
+                <li>Simpan form PDF</li>
+            </ol>
+        </div>
+        
+        <div class="warning-box">
+            <p><strong>Perhatian:</strong> Form PDF interaktif memerlukan Adobe Acrobat Reader atau software pembaca PDF yang mendukung form interaktif.</p>
+        </div>
+        
+        <h2>5. Tips Optimasi PDF</h2>
+        <div class="highlight-box">
+            <h4>Untuk Hasil Terbaik:</h4>
+            <ul>
+                <li><strong>Pilih resolusi yang tepat</strong> - 150 DPI untuk web, 300 DPI untuk print</li>
+                <li><strong>Kompres gambar</strong> untuk mengurangi ukuran file</li>
+                <li><strong>Embed fonts</strong> untuk memastikan tampilan konsisten</li>
+                <li><strong>Set security</strong> jika dokumen mengandung informasi sensitif</li>
+                <li><strong>Add metadata</strong> untuk memudahkan pencarian</li>
+            </ul>
+        </div>
+        
+        <h3>Pengaturan Kualitas PDF</h3>
+        <div class="steps">
+            <ol>
+                <li>Saat menyimpan PDF, pilih <strong>File > Save As Other > Optimized PDF</strong></li>
+                <li>Di dialog <strong>PDF Optimizer</strong>, atur:
+                    <ul>
+                        <li><strong>Images</strong> - Kompres dan downsampling gambar</li>
+                        <li><strong>Fonts</strong> - Subset fonts yang tidak umum</li>
+                        <li><strong>Transparency</strong> - Flatten jika tidak diperlukan</li>
+                        <li><strong>Clean up</strong> - Hapus elemen tidak terpakai</li>
+                    </ul>
+                </li>
+                <li>Preview ukuran file sebelum menyimpan</li>
+                <li>Simpan dengan pengaturan yang telah dioptimasi</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Tutorial 2: Edit PDF -->
+    <div class="section">
+        <h1>Tutorial Edit PDF</h1>
+        
+        <h2>Pengantar Editing PDF</h2>
+        <p>Adobe Acrobat Pro menyediakan tools yang powerful untuk mengedit berbagai elemen dalam dokumen PDF, mulai dari teks, gambar, hingga struktur halaman.</p>
+        
+        <h2>1. Edit Teks dalam PDF</h2>
+        <div class="steps">
+            <h4>Mengedit teks existing:</h4>
+            <ol>
+                <li>Buka dokumen PDF di Acrobat Pro</li>
+                <li>Pilih <strong>Tools > Edit PDF</strong></li>
+                <li>Klik pada teks yang ingin diedit</li>
+                <li>Text akan terpilih dan dapat diedit langsung</li>
+                <li>Ketik teks baru atau edit yang existing</li>
+                <li>Klik di luar text box untuk selesai editing</li>
+                <li>Simpan perubahan dengan <strong>Ctrl+S</strong></li>
+            </ol>
+        </div>
+        
+        <div class="tip-box">
+            <p><strong>Tips:</strong> Jika teks tidak bisa diedit, kemungkinan PDF tersebut berupa gambar scan. Gunakan OCR (Optical Character Recognition) untuk mengkonversi ke teks yang dapat diedit.</p>
+        </div>
+        
+        <h3>Format Teks</h3>
+        <div class="steps">
+            <ol>
+                <li>Pilih teks yang ingin diformat</li>
+                <li>Di panel <strong>Format</strong> sebelah kanan, atur:
+                    <ul>
+                        <li><strong>Font</strong> - Jenis dan ukuran font</li>
+                        <li><strong>Color</strong> - Warna teks</li>
+                        <li><strong>Alignment</strong> - Rata kiri, tengah, kanan, justify</li>
+                        <li><strong>Line Spacing</strong> - Jarak antar baris</li>
+                        <li><strong>Character Spacing</strong> - Jarak antar karakter</li>
+                    </ul>
+                </li>
+                <li>Perubahan akan diterapkan secara real-time</li>
+            </ol>
+        </div>
+        
+        <h2>2. Menambah dan Menghapus Halaman</h2>
+        <div class="steps">
+            <h4>Menambah halaman baru:</h4>
+            <ol>
+                <li>Klik kanan di panel <strong>Page Thumbnails</strong></li>
+                <li>Pilih <strong>Insert Pages</strong></li>
+                <li>Pilih lokasi halaman baru:
+                    <ul>
+                        <li><strong>Before</strong> - Sebelum halaman yang dipilih</li>
+                        <li><strong>After</strong> - Sesudah halaman yang dipilih</li>
+                        <li><strong>Beginning</strong> - Di awal dokumen</li>
+                        <li><strong>End</strong> - Di akhir dokumen</li>
+                    </ul>
+                </li>
+                <li>Tentukan sumber halaman (blank page atau from file)</li>
+                <li>Klik <strong>OK</strong></li>
+            </ol>
+        </div>
+        
+        <div class="steps">
+            <h4>Menghapus halaman:</h4>
+            <ol>
+                <li>Pilih halaman di panel <strong>Page Thumbnails</strong></li>
+                <li>Klik kanan dan pilih <strong>Delete Pages</strong></li>
+                <li>Atau tekan <strong>Delete</strong> key</li>
+                <li>Konfirmasi penghapusan</li>
+            </ol>
+        </div>
+        
+        <h2>3. Edit dan Manipulasi Gambar</h2>
+        <div class="steps">
+            <h4>Edit gambar dalam PDF:</h4>
+            <ol>
+                <li>Pilih tool <strong>Edit PDF</strong></li>
+                <li>Klik pada gambar yang ingin diedit</li>
+                <li>Klik kanan pada gambar, pilih <strong>Edit Image</strong></li>
+                <li>Gambar akan terbuka di image editor (Photoshop jika tersedia)</li>
+                <li>Edit gambar sesuai kebutuhan</li>
+                <li>Simpan dan tutup editor</li>
+                <li>Gambar dalam PDF akan terupdate otomatis</li>
+            </ol>
+        </div>
+        
+        <div class="highlight-box">
+            <h4>Manipulasi Gambar Dasar:</h4>
+            <ul>
+                <li><strong>Resize</strong> - Tarik corner handles untuk mengubah ukuran</li>
+                <li><strong>Move</strong> - Drag gambar ke posisi baru</li>
+                <li><strong>Rotate</strong> - Gunakan rotation handle</li>
+                <li><strong>Crop</strong> - Klik kanan > Crop Image</li>
+                <li><strong>Replace</strong> - Klik kanan > Replace Image</li>
+            </ul>
+        </div>
+        
+        <h2>4. Watermark dan Background</h2>
+        <div class="steps">
+            <h4>Menambah watermark:</h4>
+            <ol>
+                <li>Pilih <strong>Tools > Edit PDF > Watermark > Add</strong></li>
+                <li>Pilih jenis watermark:
+                    <ul>
+                        <li><strong>Text</strong> - Watermark berupa teks</li>
+                        <li><strong>File</strong> - Watermark berupa gambar/PDF</li>
+                    </ul>
+                </li>
+                <li>Atur posisi, opacity, dan scale watermark</li>
+                <li>Set page range yang akan diberi watermark</li>
+                <li>Preview hasil dan klik <strong>OK</strong></li>
+            </ol>
+        </div>
+        
+        <div class="steps">
+            <h4>Menambah background:</h4>
+            <ol>
+                <li>Pilih <strong>Tools > Edit PDF > Background > Add</strong></li>
+                <li>Pilih warna solid atau file gambar untuk background</li>
+                <li>Atur appearance dan opacity</li>
+                <li>Set page range</li>
+                <li>Apply background</li>
+            </ol>
+        </div>
+        
+        <h2>5. OCR (Optical Character Recognition)</h2>
+        <div class="steps">
+            <h4>Mengaktifkan OCR pada PDF scan:</h4>
+            <ol>
+                <li>Buka PDF hasil scan yang ingin diedit</li>
+                <li>Pilih <strong>Tools > Enhance Scans > Recognize Text</strong></li>
+                <li>Pilih <strong>In This File</strong></li>
+                <li>Atur pengaturan OCR:
+                    <ul>
+                        <li><strong>Pages</strong> - All pages atau page range tertentu</li>
+                        <li><strong>Language</strong> - Bahasa dokumen (Indonesia/English)</li>
+                        <li><strong>Output</strong> - Searchable Image atau Editable Text</li>
+                    </ul>
+                </li>
+                <li>Klik <strong>Recognize Text</strong></li>
+                <li>Tunggu proses OCR selesai</li>
+                <li>Teks sekarang dapat diedit dan dicari</li>
+            </ol>
+        </div>
+        
+        <div class="warning-box">
+            <p><strong>Catatan:</strong> Akurasi OCR tergantung pada kualitas scan dan jenis font. Document dengan kualitas scan buruk atau font yang tidak umum mungkin memerlukan koreksi manual.</p>
+        </div>
+        
+        <h2>6. Menggabung dan Memisah PDF</h2>
+        <div class="steps">
+            <h4>Menggabung beberapa PDF:</h4>
+            <ol>
+                <li>Pilih <strong>Tools > Combine Files</strong></li>
+                <li>Klik <strong>Add Files</strong> dan pilih PDF yang ingin digabung</li>
+                <li>Atur urutan file dengan drag & drop</li>
+                <li>Pilih <strong>Options</strong> untuk pengaturan lanjutan</li>
+                <li>Klik <strong>Combine</strong></li>
+                <li>PDF gabungan akan terbuka di window baru</li>
+                <li>Simpan hasil gabungan</li>
+            </ol>
+        </div>
+        
+        <div class="steps">
+            <h4>Memisah PDF menjadi beberapa file:</h4>
+            <ol>
+                <li>Buka PDF yang ingin dipisah</li>
+                <li>Pilih <strong>Tools > Organize Pages</strong></li>
+                <li>Pilih halaman yang ingin dipisah</li>
+                <li>Klik <strong>Extract</strong></li>
+                <li>Centang <strong>"Extract pages as separate files"</strong> jika ingin pisah per halaman</li>
+                <li>Klik <strong>Extract</strong></li>
+                <li>Simpan file hasil extract</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Tutorial 3: Berbagi & Export -->
+    <div class="section">
+        <h1>Tutorial Berbagi & Export</h1>
+        
+        <h2>Berbagi Dokumen PDF</h2>
+        
+        <h3>1. Berbagi untuk Review dan Komentar</h3>
+        <div class="steps">
+            <ol>
+                <li>Buka dokumen yang ingin dibagikan</li>
+                <li>Pilih <strong>Share</strong> dari menu atas</li>
+                <li>Atur level akses:
+                    <ul>
+                        <li><strong>Anyone with the link</strong> - Akses publik</li>
+                        <li><strong>People in organization</strong> - Akses enterprise</li>
+                        <li><strong>Invited people only</strong> - Akses terbatas</li>
+                    </ul>
+                </li>
+                <li>Masukkan email penerima</li>
+                <li>Atur deadline review (opsional)</li>
+                <li>Pastikan toggle <strong>"People can comment"</strong> aktif</li>
+                <li>Klik <strong>Invite</strong></li>
+            </ol>
+        </div>
+        
+        <div class="highlight-box">
+            <h4>Keamanan Berbagi:</h4>
+            <ul>
+                <li>Penerima harus sign in untuk menambahkan komentar</li>
+                <li>Dokumen muncul di daftar "Shared by you"</li>
+                <li>Anda dapat melacak aktivitas dokumen</li>
+                <li>Akses dapat dicabut kapan saja</li>
+            </ul>
+        </div>
+        
+        <h3>2. Berbagi dengan Link</h3>
+        <div class="steps">
+            <ol>
+                <li>Hover di atas dokumen di daftar files</li>
+                <li>Klik ikon <strong>Get a link</strong> 🔗</li>
+                <li>Aktifkan <strong>"Allow comments"</strong> jika diperlukan</li>
+                <li>Klik <strong>Get link</strong></li>
+                <li>Link tersalin ke clipboard</li>
+                <li>Bagikan link melalui email, chat, atau platform lain</li>
+            </ol>
+        </div>
+        
+        <h2>Melindungi Dokumen PDF</h2>
+        
+        <h3>1. Password Protection</h3>
+        <div class="steps">
+            <ol>
+                <li>Pilih <strong>Edit > Protect a PDF</strong></li>
+                <li>Pilih file yang ingin dilindungi</li>
+                <li>Klik <strong>Continue</strong></li>
+                <li>Masukkan password yang kuat</li>
+                <li>Konfirmasi password</li>
+                <li>Klik <strong>Set password</strong></li>
+            </ol>
+        </div>
+        
+        <div class="warning-box">
+            <p><strong>Penting:</strong> Setelah password diatur, file akan disimpan dengan nama "[filename]_protected". Pastikan Anda mengingat password yang digunakan.</p>
+        </div>
+        
+        <h3>2. Menghentikan Berbagi (Unshare)</h3>
+        <div class="steps">
+            <ol>
+                <li>Buka <strong>Documents > Shared by you</strong></li>
+                <li>Pilih file yang ingin dihentikan berbaginya</li>
+                <li>Klik <strong>Unshare</strong> 🚫</li>
+                <li>Konfirmasi di dialog</li>
+            </ol>
+        </div>
+        
+        <h2>Mengelola Dokumen Bersama</h2>
+        
+        <h3>Dashboard Manajemen</h3>
+        <div class="highlight-box">
+            <h4>Informasi yang dapat dilihat:</h4>
+            <ul>
+                <li><strong>Name</strong> - Nama file yang dibagikan</li>
+                <li><strong>Sharing</strong> - Daftar orang yang memiliki akses</li>
+                <li><strong>Status</strong> - Jumlah orang yang telah melihat</li>
+                <li><strong>Last Activity</strong> - Timestamp aktivitas terakhir</li>
+            </ul>
+        </div>
+        
+        <h3>Aksi Manajemen</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>Menambah Orang</h4>
+                <p>Expand recipient list → Klik "Add people"</p>
+            </div>
+            <div class="feature-item">
+                <h4>Mendapatkan Link</h4>
+                <p>Klik "Get link" → Link tersalin ke clipboard</p>
+            </div>
+            <div class="feature-item">
+                <h4>Mencabut Akses</h4>
+                <p>Klik "Unshare" untuk menghentikan akses</p>
+            </div>
+            <div class="feature-item">
+                <h4>Menghapus File</h4>
+                <p>Klik "Delete" untuk menghapus permanen</p>
+            </div>
+        </div>
+        
+        <h2>Export ke Format Lain</h2>
+        
+        <h3>Export Options</h3>
+        <div class="steps">
+            <ol>
+                <li>Buka PDF yang ingin diexport</li>
+                <li>Pilih <strong>File > Export To</strong></li>
+                <li>Pilih format target:
+                    <ul>
+                        <li><strong>Microsoft Word</strong> - DOCX atau DOC</li>
+                        <li><strong>Excel</strong> - XLSX atau XLS</li>
+                        <li><strong>PowerPoint</strong> - PPTX</li>
+                        <li><strong>Image</strong> - JPEG, PNG, TIFF</li>
+                        <li><strong>Text</strong> - Plain text atau RTF</li>
+                        <li><strong>HTML</strong> - Web page</li>
+                    </ul>
+                </li>
+                <li>Atur pengaturan export sesuai kebutuhan</li>
+                <li>Pilih lokasi simpan dan klik <strong>Save</strong></li>
+            </ol>
+        </div>
+        
+        <div class="tip-box">
+            <p><strong>Tips Export:</strong> Untuk hasil terbaik, pastikan PDF memiliki teks yang dapat diseleksi (bukan gambar scan) atau gunakan OCR terlebih dahulu.</p>
+        </div>
+        
+        <h2>Best Practices Kolaborasi</h2>
+        
+        <div class="highlight-box">
+            <h4>Tips Kolaborasi Efektif:</h4>
+            <ul>
+                <li><strong>Atur deadline yang realistis</strong> untuk review</li>
+                <li><strong>Berikan konteks yang jelas</strong> dalam pesan undangan</li>
+                <li><strong>Pilih level akses yang tepat</strong> sesuai sensitivitas dokumen</li>
+                <li><strong>Monitor aktivitas rutin</strong> di dashboard</li>
+                <li><strong>Kelola siklus review</strong> dengan unshare dan versi baru</li>
+                <li><strong>Backup dokumen penting</strong> sebelum berbagi luas</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Tutorial 4: E-Sign Lengkap -->
+    <div class="section">
+        <h1>Tutorial E-Sign & Digital Signature</h1>
+        
+        <h2>Memahami E-Sign vs Digital Signature</h2>
+        
+        <h3>Perbedaan Fundamental</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>E-Signature (Tanda Tangan Elektronik)</h4>
+                <ul>
+                    <li>Mudah digunakan untuk persetujuan dokumen</li>
+                    <li>Dapat berupa gambar, teks, atau tanda tangan yang digambar</li>
+                    <li>Tersimpan di cloud Adobe untuk sinkronisasi</li>
+                    <li>Ideal untuk workflow persetujuan umum</li>
+                </ul>
+            </div>
+            <div class="feature-item">
+                <h4>Digital Signature (Tanda Tangan Digital)</h4>
+                <ul>
+                    <li>Menggunakan sertifikat dan enkripsi</li>
+                    <li>Memverifikasi identitas penandatangan</li>
+                    <li>Melindungi dokumen dari perubahan tidak sah</li>
+                    <li>Memenuhi standar compliance industri</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Format File yang Didukung untuk E-Sign</h3>
+        <div class="highlight-box">
+            <h4>Selain PDF, format yang didukung:</h4>
+            <ul>
+                <li><strong>Microsoft Office:</strong> DOC, DOCX, RTF, XLSX, PPT, PPTX</li>
+                <li><strong>Text Files:</strong> TXT, CSV</li>
+                <li><strong>Web Files:</strong> HTML, HTM</li>
+                <li><strong>Image Files:</strong> TIFF, TIF, BMP, GIF, JPG, JPEG, PNG</li>
+            </ul>
+        </div>
+        
+        <h2>Setup Digital Signature</h2>
+        
+        <h3>1. Mendapatkan Digital ID</h3>
+        <div class="steps">
+            <ol>
+                <li><strong>Dari organisasi</strong> - untuk penggunaan corporate</li>
+                <li><strong>Adobe security partner</strong> - sertifikat terpercaya</li>
+                <li><strong>Self-signed digital ID</strong> - untuk kebutuhan internal</li>
+            </ol>
+        </div>
+        
+        <h3>2. Konfigurasi Signature di Acrobat</h3>
+        <div class="steps">
+            <ol>
+                <li>Buka <strong>Preferences > Signatures</strong></li>
+                <li>Pilih <strong>More</strong> di bawah <strong>Creation & Appearance</strong></li>
+                <li>Pilih metode signing default</li>
+                <li>Di <strong>Appearances</strong>, pilih <strong>New</strong> untuk membuat tampilan</li>
+                <li>Klik <strong>OK</strong> untuk menyimpan</li>
+            </ol>
+        </div>
+        
+        <div class="warning-box">
+            <p><strong>Keamanan:</strong> Aktifkan "Enable Protected Mode at startup" untuk preview dokumen yang aman sebelum menandatangani.</p>
+        </div>
+        
+        <h2>Mengirim Dokumen untuk E-Signature</h2>
+        
+        <h3>1. Request E-Signatures Individual</h3>
+        <div class="steps">
+            <ol>
+                <li>Pilih <strong>E-Sign > Request e-signatures</strong></li>
+                <li>Masukkan email dan nama penerima</li>
+                <li>Untuk menambah penerima, klik ikon <strong>plus</strong>:
+                    <ul>
+                        <li><strong>Add recipient</strong> - Tambah penandatangan</li>
+                        <li><strong>Add yourself</strong> - Tambahkan diri Anda</li>
+                        <li><strong>Add CC</strong> - Tambah penerima copy</li>
+                    </ul>
+                </li>
+                <li>Centang <strong>"Recipients must sign in order"</strong> jika perlu urutan</li>
+                <li>Pilih <strong>Prepare document</strong></li>
+            </ol>
+        </div>
+        
+        <h4>Menempatkan Field Signature</h4>
+        <div class="steps">
+            <ol>
+                <li>Pilih tipe field dari panel kiri</li>
+                <li>Drag dan drop field ke posisi yang diinginkan</li>
+                <li>Atur field properties:
+                    <ul>
+                        <li>Tandai sebagai <strong>required</strong></li>
+                        <li>Ubah penerima yang ditugaskan</li>
+                        <li>Customize field appearance</li>
+                    </ul>
+                </li>
+                <li>Di <strong>Review and send</strong>, periksa detail agreement</li>
+                <li>Atur reminder frequency jika diperlukan</li>
+                <li>Pilih <strong>Send</strong></li>
+            </ol>
+        </div>
+        
+        <h3>2. Request E-Signatures in Bulk</h3>
+        <div class="tip-box">
+            <p><strong>Catatan:</strong> Fitur Send in bulk hanya tersedia untuk Acrobat Pro atau Acrobat Pro for teams.</p>
+        </div>
+        
+        <div class="steps">
+            <ol>
+                <li>Pilih <strong>E-Sign > Send in bulk</strong></li>
+                <li>Pilih dokumen untuk bulk signing</li>
+                <li>Sesuaikan agreement name dan pesan</li>
+                <li>Atur pengaturan lanjutan:
+                    <ul>
+                        <li>Completion deadline</li>
+                        <li>Reminder frequency</li>
+                        <li>Password requirements</li>
+                        <li>Bahasa penerima</li>
+                    </ul>
+                </li>
+                <li>Tambahkan hingga 50 penerima (pisahkan dengan koma)</li>
+                <li>Pilih metode autentikasi</li>
+                <li>Drag signature fields ke posisi yang diinginkan</li>
+                <li>Centang <strong>Save as template</strong> jika ingin simpan template</li>
+                <li>Pilih <strong>Send</strong></li>
+            </ol>
+        </div>
+        
+        <div class="highlight-box">
+            <h4>Keunggulan Bulk Signing:</h4>
+            <ul>
+                <li>Setiap agreement independen dengan audit report sendiri</li>
+                <li>Penandatangan tidak mengetahui satu sama lain</li>
+                <li>Efisien untuk dokumen yang sama ke multiple recipient</li>
+            </ul>
+        </div>
+        
+        <h2>Menandatangani Dokumen</h2>
+        
+        <h3>1. E-Sign Agreement</h3>
+        <div class="steps">
+            <ol>
+                <li>Pilih <strong>Home > Waiting for you</strong></li>
+                <li>Double-click agreement yang ingin ditandatangani</li>
+                <li>Pilih signature field dalam agreement</li>
+                <li>Buat signature dengan memilih metode:
+                    <ul>
+                        <li><strong>Type</strong> - Ketik nama dan pilih gaya</li>
+                        <li><strong>Draw</strong> - Gambar signature langsung</li>
+                        <li><strong>Image</strong> - Upload gambar signature</li>
+                        <li><strong>Mobile</strong> - Buat di mobile device</li>
+                    </ul>
+                </li>
+                <li>Pilih <strong>Apply</strong> setelah membuat signature</li>
+                <li>Lengkapi semua field yang required</li>
+                <li>Pilih <strong>Click to Sign</strong> untuk finalisasi</li>
+            </ol>
+        </div>
+        
+        <div class="tip-box">
+            <p><strong>Sinkronisasi:</strong> Signature Anda tersimpan di Adobe cloud dan tersedia di semua device (desktop, web, mobile).</p>
+        </div>
+        
+        <h3>2. Digital Signature dengan Sertifikat</h3>
+        <div class="steps">
+            <ol>
+                <li>Pastikan memiliki Digital ID yang valid</li>
+                <li>Buka dokumen yang akan ditandatangani</li>
+                <li>Pilih alat <strong>Sign</strong> atau klik signature field</li>
+                <li>Pilih Digital ID yang akan digunakan</li>
+                <li>Masukkan password untuk Digital ID</li>
+                <li>Pilih tipe signature:
+                    <ul>
+                        <li><strong>Approval signature</strong> - Untuk menyetujui</li>
+                        <li><strong>Certification signature</strong> - Untuk mengontrol modifikasi</li>
+                    </ul>
+                </li>
+                <li>Konfirmasi untuk menandatangani</li>
+            </ol>
+        </div>
+        
+        <div class="warning-box">
+            <p><strong>Penting:</strong> Certification signature harus diterapkan sebelum signature lainnya dan dapat mengontrol level perubahan yang diizinkan.</p>
+        </div>
+        
+        <h2>Mengelola Agreement</h2>
+        
+        <h3>Status Agreement</h3>
+        <div class="highlight-box">
+            <h4>Status yang tersedia di dashboard:</h4>
+            <ul>
+                <li><strong>All agreements</strong> - Semua agreement dengan berbagai status</li>
+                <li><strong>In progress</strong> - Agreement yang sedang dalam proses</li>
+                <li><strong>Waiting for you</strong> - Agreement yang menunggu tindakan Anda</li>
+                <li><strong>Completed</strong> - Agreement yang telah selesai</li>
+                <li><strong>Drafts</strong> - Draft agreement yang belum dikirim</li>
+                <li><strong>Templates</strong> - Template untuk penggunaan berulang</li>
+                <li><strong>Canceled/Expired</strong> - Agreement yang dibatalkan atau kedaluwarsa</li>
+            </ul>
+        </div>
+        
+        <h3>Informasi Agreement</h3>
+        <div class="steps">
+            <h4>Detail yang dapat dilihat untuk setiap agreement:</h4>
+            <ul>
+                <li><strong>Agreement name</strong> - Nama dokumen</li>
+                <li><strong>Status</strong> - Status terkini agreement</li>
+                <li><strong>Recipients</strong> - Daftar penerima dan status mereka</li>
+                <li><strong>Created date</strong> - Tanggal pembuatan</li>
+                <li><strong>Last activity</strong> - Aktivitas terakhir</li>
+                <li><strong>Deadline</strong> - Batas waktu penyelesaian (jika ada)</li>
+            </ul>
+        </div>
+        
+        <h2>Permissions & Limitasi PDF</h2>
+        
+        <h3>Limitasi Dokumen yang Ditandatangani</h3>
+        <div class="warning-box">
+            <h4>Yang perlu diperhatikan:</h4>
+            <ul>
+                <li><strong>Single signer</strong> - Document dapat di-lock setelah signature pertama</li>
+                <li><strong>Multiple signers</strong> - Beberapa field mungkin di-lock secara bertahap</li>
+                <li><strong>Certification level</strong> - Mengontrol jenis perubahan yang diizinkan</li>
+                <li><strong>Form fields</strong> - Mungkin di-lock setelah diisi dan ditandatangani</li>
+            </ul>
+        </div>
+        
+        <h3>Security Standards</h3>
+        <div class="highlight-box">
+            <h4>Standar keamanan yang didukung:</h4>
+            <ul>
+                <li><strong>AATL (Adobe Approved Trust List)</strong> - Sertifikat terpercaya Adobe</li>
+                <li><strong>ETSI</strong> - European Telecommunications Standards Institute</li>
+                <li><strong>PAdES</strong> - PDF Advanced Electronic Signatures</li>
+                <li><strong>CAdES</strong> - CMS Advanced Electronic Signatures</li>
+                <li><strong>XML Signatures</strong> - W3C XML digital signature</li>
+                <li><strong>PKCS #12</strong> - Personal Information Exchange format</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Tutorial 5: Adobe Sign -->
+    <div class="section">
+        <h1>Tutorial Adobe Sign</h1>
+        
+        <h2>Pengantar Adobe Sign</h2>
+        <p>Adobe Sign adalah solusi e-signature yang powerful untuk organisasi yang membutuhkan workflow tanda tangan digital yang enterprise-grade dengan compliance dan security tinggi.</p>
+        
+        <h2>Setup dan Konfigurasi</h2>
+        
+        <h3>1. Account Setup</h3>
+        <div class="steps">
+            <ol>
+                <li>Daftar untuk Adobe Sign account</li>
+                <li>Verifikasi email dan setup profile</li>
+                <li>Konfigurasi organization settings</li>
+                <li>Setup branding dan templates</li>
+                <li>Konfigurasi user permissions dan roles</li>
+            </ol>
+        </div>
+        
+        <h3>2. Integration Setup</h3>
+        <div class="highlight-box">
+            <h4>Platform yang dapat diintegrasikan:</h4>
+            <ul>
+                <li><strong>Salesforce</strong> - CRM integration untuk sales workflow</li>
+                <li><strong>Microsoft</strong> - Office 365, SharePoint, Dynamics</li>
+                <li><strong>Google</strong> - Gmail, Google Drive, Google Docs</li>
+                <li><strong>Box, Dropbox</strong> - Cloud storage integration</li>
+                <li><strong>Custom APIs</strong> - REST API untuk custom development</li>
+            </ul>
+        </div>
+        
+        <h2>Workflow Management</h2>
+        
+        <h3>1. Creating Templates</h3>
+        <div class="steps">
+            <ol>
+                <li>Upload dokumen yang akan dijadikan template</li>
+                <li>Drag dan drop form fields dan signature fields</li>
+                <li>Atur field properties dan validation rules</li>
+                <li>Setup recipient roles dan signing order</li>
+                <li>Configure workflow automation rules</li>
+                <li>Test template sebelum deployment</li>
+                <li>Publish template untuk organization</li>
+            </ol>
+        </div>
+        
+        <h3>2. Automated Workflows</h3>
+        <div class="tip-box">
+            <p><strong>Workflow Triggers:</strong> Setup automated workflows berdasarkan events seperti document completion, deadline approaching, atau integration events.</p>
+        </div>
+        
+        <h2>Advanced Features</h2>
+        
+        <h3>1. Conditional Logic</h3>
+        <div class="steps">
+            <ol>
+                <li>Setup conditional field visibility</li>
+                <li>Configure dynamic recipient routing</li>
+                <li>Implement approval hierarchies</li>
+                <li>Setup automatic document distribution</li>
+            </ol>
+        </div>
+        
+        <h3>2. Compliance & Audit</h3>
+        <div class="highlight-box">
+            <h4>Compliance Standards:</h4>
+            <ul>
+                <li><strong>SOC 2 Type II</strong> - Security controls certification</li>
+                <li><strong>ISO 27001</strong> - Information security management</li>
+                <li><strong>HIPAA</strong> - Healthcare data protection</li>
+                <li><strong>GDPR</strong> - European data protection regulation</li>
+                <li><strong>eIDAS</strong> - European electronic identification</li>
+                <li><strong>21 CFR Part 11</strong> - FDA electronic records</li>
+            </ul>
+        </div>
+        
+        <h2>Reporting & Analytics</h2>
+        
+        <h3>Dashboard Metrics</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>Usage Statistics</h4>
+                <ul>
+                    <li>Documents sent per period</li>
+                    <li>Completion rates</li>
+                    <li>Average completion time</li>
+                    <li>User activity metrics</li>
+                </ul>
+            </div>
+            <div class="feature-item">
+                <h4>Performance Analytics</h4>
+                <ul>
+                    <li>Workflow bottlenecks</li>
+                    <li>Rejection reasons</li>
+                    <li>Device usage patterns</li>
+                    <li>Geographic distribution</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>API Development</h2>
+        
+        <h3>REST API Capabilities</h3>
+        <div class="steps">
+            <h4>Key API endpoints:</h4>
+            <ol>
+                <li><strong>Agreements</strong> - Create, send, manage agreements</li>
+                <li><strong>Library Documents</strong> - Manage reusable documents</li>
+                <li><strong>Workflows</strong> - Automated workflow management</li>
+                <li><strong>Users</strong> - User account management</li>
+                <li><strong>Groups</strong> - Organization group management</li>
+                <li><strong>Webhooks</strong> - Real-time event notifications</li>
+            </ol>
+        </div>
+        
+        <div class="tip-box">
+            <p><strong>Developer Resources:</strong> Adobe menyediakan SDK untuk berbagai bahasa pemrograman termasuk Java, .NET, PHP, Python, dan Node.js.</p>
+        </div>
+    </div>
+
+    <!-- Penutup -->
+    <div class="section">
+        <h1>Penutup</h1>
+        
+        <h2>Ringkasan Manual</h2>
+        <p>Buku manual ini telah membahas secara komprehensif berbagai aspek penggunaan Adobe Acrobat Pro, Adobe Sign, dan VIDA untuk kebutuhan manajemen dokumen digital modern. Dari pembuatan PDF sederhana hingga workflow enterprise yang kompleks, setiap tutorial dirancang untuk memberikan pemahaman praktis yang dapat langsung diterapkan.</p>
+        
+        <h3>Key Takeaways</h3>
+        <div class="highlight-box">
+            <ul>
+                <li><strong>Adobe Acrobat Pro</strong> menyediakan tools lengkap untuk lifecycle management dokumen PDF</li>
+                <li><strong>E-Signature</strong> memudahkan proses persetujuan dengan keamanan yang memadai</li>
+                <li><strong>Digital Signature</strong> memberikan level keamanan tertinggi dengan sertifikat digital</li>
+                <li><strong>Adobe Sign</strong> ideal untuk organization yang membutuhkan workflow enterprise</li>
+                <li><strong>VIDA</strong> menyediakan solusi tanda tangan digital yang comply dengan regulasi Indonesia</li>
+            </ul>
+        </div>
+        
+        <h3>Best Practices Summary</h3>
+        <div class="tip-box">
+            <ul>
+                <li>Pilih metode signature yang sesuai dengan kebutuhan keamanan</li>
+                <li>Optimalkan PDF untuk ukuran file dan accessibility</li>
+                <li>Gunakan templates untuk workflow yang berulang</li>
+                <li>Implement proper document security dan access control</li>
+                <li>Monitor dan audit aktivitas dokumen secara regular</li>
+                <li>Stay updated dengan Adobe updates dan security patches</li>
+            </ul>
+        </div>
+        
+        <h3>Sumber Daya Lanjutan</h3>
+        <p>Untuk pembelajaran lebih lanjut dan update terkini, kunjungi:</p>
+        <ul>
+            <li><strong>Adobe Help Center</strong> - helpx.adobe.com</li>
+            <li><strong>Adobe Community</strong> - community.adobe.com</li>
+            <li><strong>Adobe Document Cloud</strong> - acrobat.adobe.com</li>
+            <li><strong>Adobe Developer Console</strong> - developer.adobe.com</li>
+        </ul>
+        
+        <div class="warning-box">
+            <p><strong>Disclaimer:</strong> Informasi dalam manual ini berdasarkan dokumentasi Adobe terkini pada saat penulisan. Fitur dan interface mungkin berubah pada update software selanjutnya.</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 50pt;">
+            <p><strong>Terima kasih telah menggunakan Buku Manual Adobe ini.</strong></p>
+            <p style="font-style: italic;">© 2024 Manual Book Adobe. Semua hak dilindungi.</p>
+        </div>
+    </div>
+
+</body>
+</html>
